@@ -8,7 +8,7 @@ public class BoundaryClamping : MonoBehaviour
     void Update()
     {   
         // Clamps player object to size x by y screen 
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -10f, 10f),
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -8f, 8f),
 		    Mathf.Clamp(transform.position.y, -4f, 4f), transform.position.z);
     }
 }
