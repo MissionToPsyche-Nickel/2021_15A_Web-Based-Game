@@ -6,6 +6,8 @@ public class BasicMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
     public Vector2 movement;
+    public Vector2 direction;
+    public Vector3 mousePosition;
     
     //speeds for run/walk
     public float moveSpeed;
@@ -31,7 +33,14 @@ public class BasicMovement : MonoBehaviour
        		print("moveSpeed: " + moveSpeed.ToString("F0"));
        }
 
-       movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * moveSpeed;
+       if (Input.GetMouseButton(0))
+       {
+       		mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+       		direction = (mousePosition - transform.position).normalized;
+       		movement = new Vector2(direction.x, direction.y) * moveSpeed;
+       } else {
+       		movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * moveSpeed;
+       }
     }
      
     // FixedUpdate is called every physics detection step  
