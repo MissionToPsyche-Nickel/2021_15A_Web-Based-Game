@@ -6,29 +6,44 @@ public class BasicMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
     public Vector2 movement;
-  
+    
+    //speeds for run/walk
+    public float moveSpeed;
+    public float walkSpeed;
+    public float runSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
-	rb = this.GetComponent<Rigidbody2D>();
+		rb = this.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-       movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+       //hold shift to walk
+       if (Input.GetKey(KeyCode.LeftShift))
+       {
+       		moveSpeed = walkSpeed;
+       		print("moveSpeed: " + moveSpeed.ToString("F0"));
+       } else {
+       		moveSpeed = runSpeed;
+       		print("moveSpeed: " + moveSpeed.ToString("F0"));
+       }
+
+       movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * moveSpeed;
     }
      
     // FixedUpdate is called every physics detection step  
     void FixedUpdate()
     {
-	movePsyche(movement);
+		movePsyche(movement);
     }
 
     // Type of movement Psyche will have
     // We can change this function if/when needed  
     void movePsyche(Vector2 direction)
     {
-	rb.MovePosition((Vector2)transform.position + (25 * direction * Time.deltaTime));
+		rb.MovePosition((Vector2)transform.position + (direction * Time.deltaTime));
     }
 }
