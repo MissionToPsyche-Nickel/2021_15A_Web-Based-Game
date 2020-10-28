@@ -27,10 +27,10 @@ public class BasicMovement : MonoBehaviour
        if (Input.GetKey(KeyCode.LeftShift))
        {
        		moveSpeed = walkSpeed;
-       		print("moveSpeed: " + moveSpeed.ToString("F0"));
+       		//print("moveSpeed: " + moveSpeed.ToString("F0"));
        } else {
        		moveSpeed = runSpeed;
-       		print("moveSpeed: " + moveSpeed.ToString("F0"));
+       		//print("moveSpeed: " + moveSpeed.ToString("F0"));
        }
 
        if (Input.GetMouseButton(0))
