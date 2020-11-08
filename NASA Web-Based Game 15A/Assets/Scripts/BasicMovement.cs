@@ -41,8 +41,9 @@ public class BasicMovement : MonoBehaviour
        } else {
        		movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * moveSpeed;
        }
+       
     }
-     
+    
     // FixedUpdate is called every physics detection step  
     void FixedUpdate()
     {
@@ -54,5 +55,14 @@ public class BasicMovement : MonoBehaviour
     void movePsyche(Vector2 direction)
     {
 		rb.MovePosition((Vector2)transform.position + (direction * Time.deltaTime));
+    }
+    
+    // Destroys asteroid/meteroid on collison and pushes
+    // Psyche back, the multiplier has to be large
+    void OnTriggerEnter2D(Collider2D enemyCollider)
+    {
+	    float forceMultiplier = 3000;
+	    Destroy(enemyCollider.gameObject);
+	    rb.AddForce(Vector3.down * forceMultiplier);
     }
 }
