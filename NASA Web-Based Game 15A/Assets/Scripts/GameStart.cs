@@ -14,6 +14,8 @@ public class GameStart : MonoBehaviour
     public Vector2 lowerLeftXY;
     public Vector2 lowerRightXY;
 
+    public bool gameOver = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +47,10 @@ public class GameStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+       if(gameOver)
+        {
+            Time.timeScale = 0;
+            GameObject.Find("Psyche").GetComponent<Renderer>().enabled = false;
+        }
     }
 }

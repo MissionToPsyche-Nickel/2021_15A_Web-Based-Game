@@ -63,6 +63,7 @@ public class BasicMovement : MonoBehaviour
     {
 	    float forceMultiplier = 3000;
 	    Destroy(enemyCollider.gameObject);
+        GameObject.Find("Health").GetComponent<HealthUI>().health--;
 	    rb.AddForce(Vector3.down * forceMultiplier);
     }
 }
