@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicMovement : MonoBehaviour
+public class PsycheMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
     public Vector2 movement;
     public Vector2 direction;
     public Vector3 mousePosition;
+    public Animator animator;
     
     //speeds for run/walk
     public float moveSpeed;
@@ -23,25 +24,31 @@ public class BasicMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       //hold shift to walk
-       if (Input.GetKey(KeyCode.LeftShift))
-       {
-       		moveSpeed = walkSpeed;
-       		//print("moveSpeed: " + moveSpeed.ToString("F0"));
-       } else {
-       		moveSpeed = runSpeed;
-       		//print("moveSpeed: " + moveSpeed.ToString("F0"));
-       }
+	    boundaryClamping();
+	    float verticalPos = Input.GetAxis("Vertical");
+	    float horizontalPos = Input.GetAxis("Horizontal");
+	    
+		// sets parameters that determine animation to use
+		animator.SetFloat("verticalDistance", verticalPos);
+		animator.SetFloat("horizontalDistance", horizontalPos);
 
-       if (Input.GetMouseButton(0))
-       {
+		//hold shift to walk
+		if (Input.GetKey(KeyCode.LeftShift))
+		{
+       		moveSpeed = walkSpeed;
+		} else {
+       		moveSpeed = runSpeed;
+		}
+       
+		//use mouse or key controls to move
+		if (Input.GetMouseButton(0))
+		{
        		mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
        		direction = (mousePosition - transform.position).normalized;
        		movement = new Vector2(direction.x, direction.y) * moveSpeed;
-       } else {
-       		movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * moveSpeed;
-       }
-       
+		} else {
+       		movement = new Vector2(horizontalPos,verticalPos) * moveSpeed;
+		}
     }
     
     // FixedUpdate is called every physics detection step  
@@ -49,6 +56,14 @@ public class BasicMovement : MonoBehaviour
     {
 		movePsyche(movement);
     }
+    
+   // Constrains Psyche prefab to screen boundaries 
+    void boundaryClamping()
+   {
+		// Clamps player object to size x by y screen
+		transform.position = new Vector3(Mathf.Clamp(transform.position.x, -7f, 7f),
+		Mathf.Clamp(transform.position.y, -4f, 4f), transform.position.z);
+   }
 
     // Type of movement Psyche will have
     // We can change this function if/when needed  
@@ -57,13 +72,15 @@ public class BasicMovement : MonoBehaviour
 		rb.MovePosition((Vector2)transform.position + (direction * Time.deltaTime));
     }
     
-    // Destroys asteroid/meteroid on collison and pushes
-    // Psyche back, the multiplier has to be large
+    // Destroys asteroid/meteroid on collison 
     void OnTriggerEnter2D(Collider2D enemyCollider)
     {
-	    float forceMultiplier = 3000;
-	    Destroy(enemyCollider.gameObject);
+        // Reduces player's life
         GameObject.Find("Health").GetComponent<HealthUI>().health--;
+        // Plays sound upon collision
+        SoundManager.currentSound.PlaySound("CollisionSound");
+        // Applies force to player
+        float forceMultiplier = 500;
 	    rb.AddForce(Vector3.down * forceMultiplier);
     }
 }

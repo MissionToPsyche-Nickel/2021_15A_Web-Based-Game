@@ -7,6 +7,8 @@ public class HealthUI : MonoBehaviour
 {
     public TextMeshProUGUI HealthText;
     public int health = 3;
+    
+    public bool GameOverSoundplayed = false;
     public TextMeshProUGUI gameOverText;
 
     // Start is called before the first frame update
@@ -20,10 +22,14 @@ public class HealthUI : MonoBehaviour
     {
         if(health == 0)
         {
+            if (GameOverSoundplayed == false)
+            {
+                SoundManager.currentSound.PlaySound("GameOverSound");
+                GameOverSoundplayed = true;
+            }
             GameObject.Find("GameController").GetComponent<GameStart>().gameOver = true;
             HealthText.text = "";
             gameOverText.text = "GAME OVER:" + "\n" + "FINAL SCORE: " + GameObject.Find("Score").GetComponent<ScoreUI>().score;
-            
         }
         else
         {

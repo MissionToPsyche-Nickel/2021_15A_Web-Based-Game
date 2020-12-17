@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7874293577017955418}
   - component: {fileID: 8513879477642970126}
   - component: {fileID: 7874293577017955415}
-  - component: {fileID: 7874293577017955419}
   m_Layer: 0
   m_Name: Psyche
   m_TagString: Untagged
@@ -148,18 +147,7 @@ MonoBehaviour:
   movement: {x: 0, y: 0}
   direction: {x: 0, y: 0}
   mousePosition: {x: 0, y: 0, z: 0}
+  animator: {fileID: 0}
   moveSpeed: 0
   walkSpeed: 10
   runSpeed: 25
---- !u!114 &7874293577017955419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7874293577017955414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67f9dcedfcf2ef141bf9f50b603efae7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

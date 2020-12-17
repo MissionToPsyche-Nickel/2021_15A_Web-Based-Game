@@ -21,6 +21,8 @@ public class GameStart : MonoBehaviour
     {
         // does nothing
         Screen.SetResolution(width, height, fullscreen);
+        // play background music
+        SoundManager.currentSound.PlaySound("Background");
 
         // find the game coordinates from screen size
         Vector3 upperLeftScreen = new Vector3(0, Screen.height, 0);
@@ -49,6 +51,7 @@ public class GameStart : MonoBehaviour
     {
        if(gameOver)
         {
+            SoundManager.currentSound.StopSound("Background");
             Time.timeScale = 0;
             GameObject.Find("Psyche").GetComponent<Renderer>().enabled = false;
         }

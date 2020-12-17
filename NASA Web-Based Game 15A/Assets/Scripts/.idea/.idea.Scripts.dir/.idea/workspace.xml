@@ -1,8 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9f775a7a-0321-4845-919c-0216e2ea65e1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/BasicMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BasicMovement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PsycheMovement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PsycheMovement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graphics/Asteroid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graphics/Asteroid.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graphics/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graphics/background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graphics/psyche.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graphics/psyche.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presets/Asteroid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Presets/Asteroid.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presets/Psyche.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Presets/Psyche.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/GameLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/GameLevel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asteroid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Asteroid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BasicMovement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoundaryClamping.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoundaryClamping.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameStart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameStart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HealthUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HealthUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,17 +50,27 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/BasicMovement.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Asteroid.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/BoundaryClamping.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SpawnAsteroids.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GameStart.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HealthUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sound.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ScoreUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Asteroid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SpawnAsteroids.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GameStart.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PsycheMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/PlayerCollision.cs" />
         <option value="$PROJECT_DIR$/BasicMovement.cs" />
+        <option value="$PROJECT_DIR$/Asteroid.cs" />
+        <option value="$PROJECT_DIR$/DestroyAsteroid.cs" />
+        <option value="$PROJECT_DIR$/Sound.cs" />
+        <option value="$PROJECT_DIR$/HealthUI.cs" />
+        <option value="$PROJECT_DIR$/GameStart.cs" />
+        <option value="$PROJECT_DIR$/SoundManager.cs" />
+        <option value="$PROJECT_DIR$/PsycheMovement.cs" />
       </list>
     </option>
   </component>
@@ -48,14 +94,33 @@
       <option name="presentableId" value="Default" />
       <updated>1604807895033</updated>
       <workItem from="1604807926031" duration="7410000" />
+      <workItem from="1607661451682" duration="1509000" />
+      <workItem from="1607732391345" duration="2368000" />
+      <workItem from="1607813526965" duration="6114000" />
+      <workItem from="1607888596431" duration="6814000" />
+      <workItem from="1607990887575" duration="6406000" />
+      <workItem from="1608063192122" duration="6309000" />
+      <workItem from="1608083708828" duration="1257000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
+    public Animator animator;
+    public bool collision = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,5 +19,12 @@ public class Asteroid : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    
+    void OnTriggerEnter2D(Collider2D objectCollider)
+    {
+        collision = true;
+        animator.SetBool("destroyed", collision);
+        collision = false;
     }
 }
