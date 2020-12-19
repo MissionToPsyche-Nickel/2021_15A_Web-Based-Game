@@ -28,10 +28,6 @@ public class PsycheMovement : MonoBehaviour
 	    float verticalPos = Input.GetAxis("Vertical");
 	    float horizontalPos = Input.GetAxis("Horizontal");
 	    
-		// sets parameters that determine animation to use
-		animator.SetFloat("verticalDistance", verticalPos);
-		animator.SetFloat("horizontalDistance", horizontalPos);
-
 		//hold shift to walk
 		if (Input.GetKey(KeyCode.LeftShift))
 		{
@@ -69,6 +65,11 @@ public class PsycheMovement : MonoBehaviour
     // We can change this function if/when needed  
     void movePsyche(Vector2 direction)
     {
+        // sets parameters that determine animation to use
+		animator.SetFloat("verticalDistance", direction.y * Time.deltaTime);
+		animator.SetFloat("horizontalDistance", direction.x * Time.deltaTime);
+        print("vert: " + direction.y * Time.deltaTime);
+        print("hori: " + direction.x * Time.deltaTime);
 		rb.MovePosition((Vector2)transform.position + (direction * Time.deltaTime));
     }
     

@@ -26,24 +26,24 @@ public class GameStart : MonoBehaviour
 
         // find the game coordinates from screen size
         Vector3 upperLeftScreen = new Vector3(0, Screen.height, 0);
-        print("upperLeftScreen:" + upperLeftScreen);
+        //print("upperLeftScreen:" + upperLeftScreen);
         upperLeftXY = new Vector2(cam.ScreenToWorldPoint(upperLeftScreen).x, cam.ScreenToWorldPoint(upperLeftScreen).y);
-        print("upperLeftXY:" + upperLeftXY);
+        //print("upperLeftXY:" + upperLeftXY);
 
         Vector3 upperRightScreen = new Vector3(Screen.width, Screen.height, 0);
-        print("upperRightScreen:" + upperRightScreen);
+        //print("upperRightScreen:" + upperRightScreen);
         upperRightXY = new Vector2(cam.ScreenToWorldPoint(upperRightScreen).x, cam.ScreenToWorldPoint(upperRightScreen).y);
-        print("upperRightXY:" + upperRightXY);
+        //print("upperRightXY:" + upperRightXY);
 
         Vector3 lowerLeftScreen = new Vector3(0, 0, 0);
-        print("lowerLeftScreen:" + lowerLeftScreen);
+        //print("lowerLeftScreen:" + lowerLeftScreen);
         lowerLeftXY = new Vector2(cam.ScreenToWorldPoint(lowerLeftScreen).x, cam.ScreenToWorldPoint(lowerLeftScreen).y);
-        print("lowerLeftXY:" + lowerLeftXY);
+        //print("lowerLeftXY:" + lowerLeftXY);
 
         Vector3 lowerRightScreen = new Vector3(Screen.width, 0, 0);
-        print("lowerRightScreen:" + lowerRightScreen);
+        //print("lowerRightScreen:" + lowerRightScreen);
         lowerRightXY = new Vector2(cam.ScreenToWorldPoint(lowerRightScreen).x, cam.ScreenToWorldPoint(lowerRightScreen).y);
-        print("lowerRightXY:" + lowerRightXY);
+        //print("lowerRightXY:" + lowerRightXY);
     }
 
     // Update is called once per frame
