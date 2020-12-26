@@ -58,7 +58,7 @@ public class PsycheMovement : MonoBehaviour
    {
 		// Clamps player object to size x by y screen
 		transform.position = new Vector3(Mathf.Clamp(transform.position.x, -7f, 7f),
-		Mathf.Clamp(transform.position.y, -4f, 4f), transform.position.z);
+		Mathf.Clamp(transform.position.y, -4.5f, 4.5f), transform.position.z);
    }
 
     // Type of movement Psyche will have
@@ -68,20 +68,21 @@ public class PsycheMovement : MonoBehaviour
         // sets parameters that determine animation to use
 		animator.SetFloat("verticalDistance", direction.y * Time.deltaTime);
 		animator.SetFloat("horizontalDistance", direction.x * Time.deltaTime);
-        print("vert: " + direction.y * Time.deltaTime);
-        print("hori: " + direction.x * Time.deltaTime);
 		rb.MovePosition((Vector2)transform.position + (direction * Time.deltaTime));
     }
-    
-    // Destroys asteroid/meteroid on collison 
+
+    // Applies pushback to player on collision, we can 
+    // get rid of the entire function if the pushback 
+    // is not needed
     void OnTriggerEnter2D(Collider2D enemyCollider)
     {
-        // Reduces player's life
-        GameObject.Find("Health").GetComponent<HealthUI>().health--;
-        // Plays sound upon collision
-        SoundManager.currentSound.PlaySound("CollisionSound");
-        // Applies force to player
-        float forceMultiplier = 500;
-	    rb.AddForce(Vector3.down * forceMultiplier);
+	    if (enemyCollider.CompareTag("Asteroid"))
+	    {
+		    // Reduces player's life
+        	GameObject.Find("Health").GetComponent<HealthUI>().health--;
+		    // Applies force to player
+		    float forceMultiplier = 1000;
+		    rb.AddForce(Vector3.down * forceMultiplier);
+	    }
     }
 }

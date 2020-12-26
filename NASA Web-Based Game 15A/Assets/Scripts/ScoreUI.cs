@@ -6,7 +6,9 @@ using TMPro;
 
 public class ScoreUI : MonoBehaviour
 {
-    public int score = 0;
+    public float score = 0;
+    public int finalScore = 0;
+    public float scoreRate = 1f;
     public TextMeshProUGUI scoreText;
 
     private void Update()
@@ -18,8 +20,11 @@ public class ScoreUI : MonoBehaviour
         }
         else
         {
-            score = (int)Time.time * 5;
-            scoreText.text = "SCORE: " + score;
+            // Adds 5 to score every in-game second, changed to
+           // from orginal implmentation to allow points from power-up
+            score += Time.deltaTime * scoreRate;
+            finalScore = (int)score * 5 ;
+            scoreText.text = "SCORE: " + finalScore;
         }
     }
 }

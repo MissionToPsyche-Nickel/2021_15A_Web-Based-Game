@@ -20,10 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f775a7a-0321-4845-919c-0216e2ea65e1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Graphics/Animations/Asteroid.controller" beforeDir="false" afterPath="$PROJECT_DIR$/../Graphics/Animations/Asteroid.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graphics/Animations/Psyche Neutral.anim" beforeDir="false" afterPath="$PROJECT_DIR$/../Graphics/Animations/Psyche Neutral.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graphics/Misc/background(1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Graphics/Misc/background(1).png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presets/Asteroid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Presets/Asteroid.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Presets/Psyche.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Presets/Psyche.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Scenes/GameLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/GameLevel.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Asteroid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Asteroid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DestroyObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DestroyObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameStart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameStart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HealthUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HealthUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PsycheMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PsycheMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScoreUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ScoreUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Sound.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SoundManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,14 +48,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PowerUP.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HealthUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Sound.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ScoreUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sound.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ScoreUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Asteroid.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SpawnAsteroids.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GameStart.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ScrollingBackground.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SpawnAsteroids.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GameStart.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SoundManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TriviaAnwser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Trivia.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DestroyObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TriviaManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ScrollingBackground.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PsycheMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -49,14 +68,22 @@
       <list>
         <option value="$PROJECT_DIR$/PlayerCollision.cs" />
         <option value="$PROJECT_DIR$/BasicMovement.cs" />
-        <option value="$PROJECT_DIR$/Asteroid.cs" />
         <option value="$PROJECT_DIR$/DestroyAsteroid.cs" />
-        <option value="$PROJECT_DIR$/Sound.cs" />
-        <option value="$PROJECT_DIR$/HealthUI.cs" />
-        <option value="$PROJECT_DIR$/SoundManager.cs" />
         <option value="$PROJECT_DIR$/ScrollingBackground.cs" />
-        <option value="$PROJECT_DIR$/GameStart.cs" />
+        <option value="$PROJECT_DIR$/SoundManager.cs" />
+        <option value="$PROJECT_DIR$/QuestionManager.cs" />
+        <option value="$PROJECT_DIR$/Question.cs" />
+        <option value="$PROJECT_DIR$/Asteroid.cs" />
         <option value="$PROJECT_DIR$/PsycheMovement.cs" />
+        <option value="$PROJECT_DIR$/HealthUI.cs" />
+        <option value="$PROJECT_DIR$/GameStart.cs" />
+        <option value="$PROJECT_DIR$/TriviaAnwser.cs" />
+        <option value="$PROJECT_DIR$/ScoreUI.cs" />
+        <option value="$PROJECT_DIR$/TriviaManager.cs" />
+        <option value="$PROJECT_DIR$/Trivia.cs" />
+        <option value="$PROJECT_DIR$/PowerUP.cs" />
+        <option value="$PROJECT_DIR$/Sound.cs" />
+        <option value="$PROJECT_DIR$/DestroyObject.cs" />
       </list>
     </option>
   </component>
@@ -88,6 +115,12 @@
       <workItem from="1608063192122" duration="6309000" />
       <workItem from="1608083708828" duration="1257000" />
       <workItem from="1608233572740" duration="10501000" />
+      <workItem from="1608409084734" duration="9966000" />
+      <workItem from="1608493036997" duration="9343000" />
+      <workItem from="1608514917019" duration="2183000" />
+      <workItem from="1608517370598" duration="853000" />
+      <workItem from="1608577915840" duration="8945000" />
+      <workItem from="1608593893722" duration="12713000" />
     </task>
     <servers />
   </component>
@@ -110,5 +143,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="386" y="58" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1608583248055">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="386" y="58" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.834@0.0.1536.834" timestamp="1608583248055" />
   </component>
 </project>

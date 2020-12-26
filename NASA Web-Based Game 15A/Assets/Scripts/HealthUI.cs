@@ -24,12 +24,12 @@ public class HealthUI : MonoBehaviour
         {
             if (GameOverSoundplayed == false)
             {
-                SoundManager.currentSound.PlaySound("GameOverSound");
+                SoundManager.instance.PlaySound("GameOverSound");
                 GameOverSoundplayed = true;
             }
             GameObject.Find("GameController").GetComponent<GameStart>().gameOver = true;
             HealthText.text = "";
-            gameOverText.text = "GAME OVER:" + "\n" + "FINAL SCORE: " + GameObject.Find("Score").GetComponent<ScoreUI>().score;
+            gameOverText.text = "GAME OVER:" + "\n" + "FINAL SCORE: " + GameObject.Find("Score").GetComponent<ScoreUI>().finalScore;
         }
         else
         {

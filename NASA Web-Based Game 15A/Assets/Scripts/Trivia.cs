@@ -1,0 +1,15 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+// Base Class to hold Trivia. If someone has a better idea
+// please do it.
+[System.Serializable]
+public class Trivia
+{
+    public string question;
+    public string[] choices;
+    // The correct choice goes from 1 to length of choices.
+    // DO NOT PUT 0 AS A CHOICE.
+    public int correctChoice;
+}

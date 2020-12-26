@@ -2,21 +2,21 @@
 using UnityEngine;
 using UnityEngine.Audio;
 
-// I used the Manager fro this video https://www.youtube.com/watch?v=6OT43pvUyfY.
+// I used the Manager from this video https://www.youtube.com/watch?v=6OT43pvUyfY.
 // Please change it around if anyone has a better way to manage it
 public class SoundManager : MonoBehaviour
 {
-    public static SoundManager currentSound;
+    public static SoundManager instance;
     //stores all the sound clips
-    //collisions, background music, powerup
+    //collisions, background music,powerup
     public Sound[] soundlist;
 
     // Awake is called before the game starts
     void Awake()
     {
-        if(currentSound == null)
+        if (instance == null)
         {
-           currentSound = this;
+            instance = this;
         }
         else
         {
@@ -46,10 +46,10 @@ public class SoundManager : MonoBehaviour
           Debug.LogWarning(name + " does not exist");
           return;
         }
-          s.source.Play();
-     }
+        s.source.Play();
+    }
 
-        // Plays audio clip when called, used in other scripts when
+    // Plays audio clip when called, used in other scripts when
     // clip is needed
     public void StopSound(string name)
     {
@@ -59,6 +59,6 @@ public class SoundManager : MonoBehaviour
           Debug.LogWarning(name + " does not exist");
           return;
         }
-          s.source.Stop();
+        s.source.Stop();
      }
 }

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2624585201762776085}
   m_Layer: 0
   m_Name: Asteroid
-  m_TagString: Untagged
+  m_TagString: Asteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 2624585201762776085}
-  destroyed: 0
+  collision: 0
 --- !u!61 &3747471020244151811
 BoxCollider2D:
   m_ObjectHideFlags: 0

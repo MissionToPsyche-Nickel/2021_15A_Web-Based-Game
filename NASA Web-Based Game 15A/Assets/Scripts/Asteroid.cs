@@ -21,10 +21,22 @@ public class Asteroid : MonoBehaviour
         }
     }
     
-    void OnTriggerEnter2D(Collider2D objectCollider)
+    void destroyAsteroid()
     {
+        // Plays sound upon collision
+        SoundManager.instance.PlaySound("CollisionSound");
+        
+        //plays destroyed animation
         collision = true;
         animator.SetBool("destroyed", collision);
         collision = false;
+    }
+    
+    void OnTriggerEnter2D(Collider2D objectCollider)
+    {
+        if (objectCollider.CompareTag("Psyche"))
+        {
+            destroyAsteroid();
+        }
     }
 }

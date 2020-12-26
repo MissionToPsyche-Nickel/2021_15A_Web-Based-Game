@@ -15,6 +15,7 @@ public class GameStart : MonoBehaviour
     public Vector2 lowerRightXY;
 
     public bool gameOver = false;
+    public bool musicStopped = false;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,7 @@ public class GameStart : MonoBehaviour
         // does nothing
         Screen.SetResolution(width, height, fullscreen);
         // play background music
-        SoundManager.currentSound.PlaySound("Background");
+        SoundManager.instance.PlaySound("Background");
 
         // find the game coordinates from screen size
         Vector3 upperLeftScreen = new Vector3(0, Screen.height, 0);
@@ -51,7 +52,11 @@ public class GameStart : MonoBehaviour
     {
        if(gameOver)
         {
-            SoundManager.currentSound.StopSound("Background");
+            if (musicStopped == false)
+            {
+                SoundManager.instance.StopSound("Background");
+                musicStopped = true;
+            }
             Time.timeScale = 0;
             GameObject.Find("Psyche").GetComponent<Renderer>().enabled = false;
         }
