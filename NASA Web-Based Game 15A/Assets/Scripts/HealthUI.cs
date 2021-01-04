@@ -11,14 +11,13 @@ public class HealthUI : MonoBehaviour
     public bool GameOverSoundplayed = false;
     public TextMeshProUGUI gameOverText;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
+    {
+        gameOverScreen();
+    }
+
+    public void gameOverScreen()
     {
         if(health == 0)
         {

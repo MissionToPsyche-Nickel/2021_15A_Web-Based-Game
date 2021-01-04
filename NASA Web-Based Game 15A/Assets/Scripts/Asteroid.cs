@@ -6,11 +6,6 @@ public class Asteroid : MonoBehaviour
 {
     public Animator animator;
     public bool collision = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -29,7 +24,7 @@ public class Asteroid : MonoBehaviour
         //plays destroyed animation
         collision = true;
         animator.SetBool("destroyed", collision);
-        collision = false;
+		collision = false;
     }
     
     void OnTriggerEnter2D(Collider2D objectCollider)

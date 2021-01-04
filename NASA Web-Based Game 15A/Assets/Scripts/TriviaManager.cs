@@ -34,8 +34,7 @@ public class TriviaManager: MonoBehaviour
     {
         for (int button = 0; button < choiceButtons.Length; button++)
         {
-            choiceButtons[button].GetComponent<TriviaAnwser>().isCorrect = false;
-            string choiceText = triviaBank[currentQuestion].choices[button];
+	        string choiceText = triviaBank[currentQuestion].choices[button];
             choiceButtons[button].GetComponentInChildren<TextMeshProUGUI>().text = choiceText;
             
             // Note that the correct options go from 1 to 4 due to how buttons work.
@@ -43,6 +42,8 @@ public class TriviaManager: MonoBehaviour
 			if(triviaBank[currentQuestion].correctChoice == button+1)
 			{
 				choiceButtons[button].GetComponent<TriviaAnwser>().isCorrect = true;
+			} else {
+				choiceButtons[button].GetComponent<TriviaAnwser>().isCorrect = false;
 			}
 
         }

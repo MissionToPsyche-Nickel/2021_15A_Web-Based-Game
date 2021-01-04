@@ -27,6 +27,7 @@ public class TriviaAnwser : MonoBehaviour
             Debug.Log("Wrong Anwser");
             SoundManager.instance.PlaySound("IncorrectSound");	
         } 
+        
         //gets the button that has the correct anwser and turns it green for
         // a second
         correctChoice = GameObject.Find("TriviaManager").GetComponent<TriviaManager>().getCorrectChoice();

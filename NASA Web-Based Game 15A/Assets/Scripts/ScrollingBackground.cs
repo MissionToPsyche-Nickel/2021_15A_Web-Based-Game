@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class ScrollingBackground : MonoBehaviour
 {
-    //rate of scrollin
+    //rate of scrolling
     public float speed = 1f;
 
-    //do not change the clap the the background height
+    //do not change the ClampPos to match background height
     //the player will jolt whenever the child background switches
     //over
     public float screenClampPos = 10;
-
-    [HideInInspector]
-    public Vector3 startPos;
+    [HideInInspector] public Vector3 startPos;
     // Start is called before the first frame update
     void Start()
     {
