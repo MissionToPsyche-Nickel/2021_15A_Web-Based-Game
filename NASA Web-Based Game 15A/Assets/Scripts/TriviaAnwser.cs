@@ -31,7 +31,8 @@ public class TriviaAnwser : MonoBehaviour
         //gets the button that has the correct anwser and turns it green for
         // a second
         correctChoice = GameObject.Find("TriviaManager").GetComponent<TriviaManager>().getCorrectChoice();
-        correctChoice.GetComponent<Image>().color = Color.green; 
+		//correctChoice.GetComponent<Button>().interactable = false;
+        correctChoice.GetComponent<Image>().color = Color.green;
         // Keeps the Question of screen for a second  and then resumes shoot em up
         //  portion.
         StartCoroutine(exitTrivia()); 

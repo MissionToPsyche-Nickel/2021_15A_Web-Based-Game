@@ -34,6 +34,7 @@ public class TriviaManager: MonoBehaviour
     {
         for (int button = 0; button < choiceButtons.Length; button++)
         {
+            choiceButtons[button].GetComponent<Button>().interactable = true;
 	        string choiceText = triviaBank[currentQuestion].choices[button];
             choiceButtons[button].GetComponentInChildren<TextMeshProUGUI>().text = choiceText;
             
@@ -60,6 +61,7 @@ public class TriviaManager: MonoBehaviour
 			{
 				choice =  choiceButtons[button];
 			}
+          choiceButtons[button].GetComponent<Button>().interactable = false;
         }
 		return choice;
     }

@@ -185,7 +185,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.95686275, g: 0.4862745, b: 0.2, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1027,9 +1027,9 @@ MonoBehaviour:
   triviaBank:
   - question: When does Psyche launch?
     choices:
-    - 2023
-    - 2025
     - 2022
+    - 2025
+    - 2023
     - 2026
     correctChoice: 1
   choiceButtons:
@@ -1730,7 +1730,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.95686275, g: 0.4862745, b: 0.2, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2279,7 +2279,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.95686275, g: 0.4862745, b: 0.2, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2647,9 +2647,9 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.95686275, g: 0.4862745, b: 0.2, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
+    m_FadeDuration: 0
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
@@ -2746,7 +2746,7 @@ MonoBehaviour:
   soundlist:
   - clipName: CollisionSound
     clip: {fileID: 8300000, guid: c117f984007daaa45bcefe341654f560, type: 3}
-    volume: 1
+    volume: 0.33
     loop: 0
     source: {fileID: 0}
   - clipName: GameOverSound
@@ -2756,7 +2756,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - clipName: Background
     clip: {fileID: 8300000, guid: 65c619960d1e53743bcf75b6771cbad6, type: 3}
-    volume: 0.42
+    volume: 0.11
     loop: 1
     source: {fileID: 0}
   - clipName: CorrectSound

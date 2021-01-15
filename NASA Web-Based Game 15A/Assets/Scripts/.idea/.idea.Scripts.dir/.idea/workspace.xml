@@ -20,20 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f775a7a-0321-4845-919c-0216e2ea65e1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Graphics/Animations/Asteroid Destroyed.anim" beforeDir="false" afterPath="$PROJECT_DIR$/../Graphics/Animations/Asteroid Destroyed.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Scenes/GameLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/GameLevel.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Asteroid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Asteroid.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HealthUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HealthUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScrollingBackground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ScrollingBackground.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpawnAsteroids.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpawnAsteroids.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trivia.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Trivia.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TriviaAnwser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TriviaAnwser.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TriviaManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TriviaManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +68,13 @@
         <option value="$PROJECT_DIR$/Sound.cs" />
         <option value="$PROJECT_DIR$/DestroyObject.cs" />
         <option value="$PROJECT_DIR$/Trivia.cs" />
-        <option value="$PROJECT_DIR$/TriviaAnwser.cs" />
         <option value="$PROJECT_DIR$/SpawnAsteroids.cs" />
         <option value="$PROJECT_DIR$/ScrollingBackground.cs" />
         <option value="$PROJECT_DIR$/Asteroid.cs" />
-        <option value="$PROJECT_DIR$/TriviaManager.cs" />
         <option value="$PROJECT_DIR$/HealthUI.cs" />
         <option value="$PROJECT_DIR$/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/TriviaAnwser.cs" />
+        <option value="$PROJECT_DIR$/TriviaManager.cs" />
       </list>
     </option>
   </component>
@@ -125,6 +116,7 @@
       <workItem from="1609027284196" duration="3890000" />
       <workItem from="1609035276716" duration="1056000" />
       <workItem from="1609096224306" duration="5751000" />
+      <workItem from="1610689911029" duration="3393000" />
     </task>
     <servers />
   </component>
