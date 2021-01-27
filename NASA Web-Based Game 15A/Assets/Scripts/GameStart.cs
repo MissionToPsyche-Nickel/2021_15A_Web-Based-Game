@@ -17,6 +17,9 @@ public class GameStart : MonoBehaviour
     public bool gameOver = false;
     public bool musicStopped = false;
 
+    [SerializeField] private GameObject pausePanel;
+    [SerializeField] private GameObject triviaPanel;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +48,12 @@ public class GameStart : MonoBehaviour
         //print("lowerRightScreen:" + lowerRightScreen);
         lowerRightXY = new Vector2(cam.ScreenToWorldPoint(lowerRightScreen).x, cam.ScreenToWorldPoint(lowerRightScreen).y);
         //print("lowerRightXY:" + lowerRightXY);
+
+
+        gameOver = false;
+        musicStopped = false;
+        Time.timeScale = 1f;
+        //GameObject.Find("Health").GetComponent<HealthUI>().GameOverSoundplayed = false;
     }
 
     // Update is called once per frame
