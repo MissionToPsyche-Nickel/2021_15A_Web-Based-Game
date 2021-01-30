@@ -53,7 +53,6 @@ public class GameStart : MonoBehaviour
         gameOver = false;
         musicStopped = false;
         Time.timeScale = 1f;
-        //GameObject.Find("Health").GetComponent<HealthUI>().GameOverSoundplayed = false;
     }
 
     // Update is called once per frame

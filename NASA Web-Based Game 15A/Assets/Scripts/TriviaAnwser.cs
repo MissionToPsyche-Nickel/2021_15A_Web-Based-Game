@@ -22,7 +22,8 @@ public class TriviaAnwser : MonoBehaviour
             // Adds extra life to player if correct. Will probably switch this around
             GameObject.Find("Health").GetComponent<HealthUI>().health++;
                 
-        }else
+        }
+        else
         {
             Debug.Log("Wrong Anwser");
             SoundManager.instance.PlaySound("IncorrectSound");	
