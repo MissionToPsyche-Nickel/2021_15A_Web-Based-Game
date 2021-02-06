@@ -2,16 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// Power-up triggers questions. Player gets 1000 points if they hit
-// it and an extra life if they anwser the question right.
-public class PowerUP : MonoBehaviour
+// This script  handles the trivia power-up itself. Specfically , it handles
+// its destruction and interaction with psyche
+public class TriviaPUp : MonoBehaviour
 {
-    [SerializeField] private GameObject question;
-
+    private float lifespan = 12f;
     void Start()
-    { 
-        question = GameObject.Find("Trivia Panel");
-        question.SetActive(false);
+    {
+        Destroy(gameObject, lifespan);
     }
     void OnTriggerEnter2D(Collider2D objectCollider)
     {
@@ -20,9 +18,11 @@ public class PowerUP : MonoBehaviour
             Destroy(gameObject);
             // Actually adds 1000 points but the final number is multiplied by 5
             GameObject.Find("Score").GetComponent<ScoreUI>().score+=200;
-            question.SetActive(true);
+            GameObject.Find("TriviaManager").GetComponent<TriviaManager>().activateTrivia();
             //pauses most operations in-game except UI
             Time.timeScale = 0f;
+            
         }
     }
+    
 }

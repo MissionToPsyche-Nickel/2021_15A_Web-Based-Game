@@ -13,10 +13,18 @@ public class TriviaManager: MonoBehaviour
     public GameObject[] choiceButtons;
     public int currentQuestion;
     public TextMeshProUGUI questionText;
+    [SerializeField] private GameObject triviaPanel;
 
     void Start()
     {
-        getRandomQuestion();
+	    triviaPanel = GameObject.Find("Trivia Panel");
+	    triviaPanel.SetActive(false);
+    }
+
+    public void activateTrivia()
+    {
+	    triviaPanel.SetActive(true);
+	    getRandomQuestion();
     }
 
     // Gets random question from trivia bank
@@ -50,7 +58,7 @@ public class TriviaManager: MonoBehaviour
         }
     }
 
-    // Returns the button with the correct anwser
+    // Returns the button with the correct answer
     public GameObject getCorrectChoice()
     {
 		GameObject choice = choiceButtons[0];
@@ -61,7 +69,7 @@ public class TriviaManager: MonoBehaviour
 			{
 				choice =  choiceButtons[button];
 			}
-          choiceButtons[button].GetComponent<Button>().interactable = false;
+	        choiceButtons[button].GetComponent<Button>().interactable = false;
         }
 		return choice;
     }

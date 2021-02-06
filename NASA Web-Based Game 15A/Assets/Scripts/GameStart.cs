@@ -66,7 +66,7 @@ public class GameStart : MonoBehaviour
                 musicStopped = true;
             }
             Time.timeScale = 0;
-            GameObject.Find("Psyche").GetComponent<Renderer>().enabled = false;
+            //GameObject.Find("Psyche").GetComponent<Renderer>().enabled = false;
         }
     }
 }
