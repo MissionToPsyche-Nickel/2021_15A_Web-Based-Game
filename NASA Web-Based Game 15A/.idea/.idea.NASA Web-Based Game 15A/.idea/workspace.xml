@@ -20,17 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="317d24a8-5b88-4907-b067-727a11698f8c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Misc/powerUP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Misc/powerUP.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NASA Web-Based Game 15A/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NASA Web-Based Game 15A/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PowerUP.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PowerUP.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TriviaAnwser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TriviaAnwser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TriviaManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TriviaManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/EditMode.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/PlayMode.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612575148176</updated>
       <workItem from="1612575156283" duration="2301000" />
-      <workItem from="1612579748884" duration="8324000" />
+      <workItem from="1612579748884" duration="8631000" />
     </task>
     <servers />
   </component>
