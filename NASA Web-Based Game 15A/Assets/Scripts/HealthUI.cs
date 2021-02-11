@@ -9,7 +9,7 @@ public class HealthUI : MonoBehaviour
     public TextMeshProUGUI HealthText;
     public int health = 3;
     
-    public bool GameOverSoundplayed = false;
+    public bool gameOverSoundplayed = false;
     public TextMeshProUGUI gameOverText;
 
     void Start()
@@ -27,10 +27,10 @@ public class HealthUI : MonoBehaviour
     {
         if(health == 0)
         {
-            if (GameOverSoundplayed == false)
+            if (gameOverSoundplayed == false)
             {
                 SoundManager.instance.PlaySound("GameOverSound");
-                GameOverSoundplayed = true;
+                gameOverSoundplayed = true;
             }
             GameObject.Find("GameController").GetComponent<GameStart>().gameOver = true;
             HealthText.text = "";

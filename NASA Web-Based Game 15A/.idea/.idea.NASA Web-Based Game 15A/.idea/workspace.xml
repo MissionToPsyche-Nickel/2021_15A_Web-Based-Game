@@ -21,8 +21,23 @@
   <component name="ChangeListManager">
     <list default="true" id="317d24a8-5b88-4907-b067-727a11698f8c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NASA Web-Based Game 15A/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NASA Web-Based Game 15A/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NASA Web-Based Game 15A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NASA Web-Based Game 15A/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Asteroid/Asteroid.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/Asteroid/Asteroid.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Misc/background.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/Misc/background.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/Asteroid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Presets/Asteroid.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/Psyche.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Presets/Psyche.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Presets/TriviaPUp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Presets/TriviaPUp.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScoreUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScoreUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScrollingBackground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScrollingBackground.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnAsteroids.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnAsteroids.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trivia.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trivia.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +51,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/PowerUP.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameStart.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriviaManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TriviaAnwser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PowerUpManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriviaPUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScrollingBackground.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnAsteroids.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameStart.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PauseMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealthUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScoreUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Trivia.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TriviaAnwser.cs" />
       </list>
     </option>
   </component>
@@ -86,6 +108,7 @@
       <updated>1612575148176</updated>
       <workItem from="1612575156283" duration="2301000" />
       <workItem from="1612579748884" duration="8631000" />
+      <workItem from="1613059724835" duration="5759000" />
     </task>
     <servers />
   </component>
@@ -108,5 +131,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="93" y="93" width="1350" height="648" key="VCS.FileHistoryDialog" timestamp="1613067266645">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="648" key="VCS.FileHistoryDialog/0.0.1536.834@0.0.1536.834" timestamp="1613067266645" />
   </component>
 </project>

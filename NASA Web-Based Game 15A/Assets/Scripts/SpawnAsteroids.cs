@@ -25,7 +25,7 @@ public class SpawnAsteroids : MonoBehaviour
             lastAsteroidTime = Time.time;
             // create instance and set position and velocity
             GameObject asteroid = Instantiate(asteroidPrefab);
-            astSize = Random.Range(.01f, .05f);
+            astSize = Random.Range(.02f, .04f);
             asteroid.transform.localScale = new Vector2(astSize, astSize);
             asteroid.transform.position = new Vector3(Random.Range(leftSide, rightSide), transform.position.y + 6, 0);
             

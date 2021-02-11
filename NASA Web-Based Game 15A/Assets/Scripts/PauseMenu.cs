@@ -9,7 +9,7 @@ public class PauseMenu : MonoBehaviour
 	[SerializeField] private GameObject triviaPanel;
 
     void Start()
-    {	  
+    {
         triviaPanel = GameObject.Find("Trivia Panel");
         pausePanel = GameObject.Find("Pause Panel");
         pausePanel.SetActive(false);
@@ -21,15 +21,17 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            Debug.Log("P Pressed");
-            PauseGame();
+            if (inPauseMenu == false)
+                PauseGame();
+            else
+                ResumeGame();
         }
     }
 
     public void ResumeGame()
     {
-		triviaPanel = GameObject.Find("Trivia Panel");
-        if(triviaPanel == null)
+		//triviaPanel = GameObject.Find("Trivia Panel");
+        if(ReferenceEquals(triviaPanel, null))
         {
             Time.timeScale = 1f;
         }
@@ -37,7 +39,7 @@ public class PauseMenu : MonoBehaviour
         inPauseMenu = false;
     }
 
-    public void PauseGame()
+    private void PauseGame()
     {
         pausePanel.SetActive(true);
         inPauseMenu = true;

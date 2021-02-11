@@ -40,6 +40,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 762774853
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Interactable Sprites
+    uniqueID: 2058033617
+    locked: 0
+  - name: UI
+    uniqueID: 1854092669
     locked: 0

@@ -61,7 +61,7 @@ public class GameStart : MonoBehaviour
     void Update()
     {
        if(gameOver)
-        {
+       {
             if (musicStopped == false)
             {
                 SoundManager.instance.StopSound("Background");
@@ -69,6 +69,6 @@ public class GameStart : MonoBehaviour
             }
             Time.timeScale = 0;
             //GameObject.Find("Psyche").GetComponent<Renderer>().enabled = false;
-        }
+       }
     }
 }

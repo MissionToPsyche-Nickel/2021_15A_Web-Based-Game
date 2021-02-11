@@ -21,7 +21,7 @@ public class ScoreUI : MonoBehaviour
         else
         {
             // Adds 5 to score every in-game second, changed to
-           // from orginal implmentation to allow points from power-up
+           // from original implementation to allow points from power-up
             score += Time.deltaTime * scoreRate;
             finalScore = (int)score * 5 ;
             scoreText.text = "SCORE: " + finalScore;

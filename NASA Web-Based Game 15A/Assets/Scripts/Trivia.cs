@@ -10,6 +10,6 @@ public class Trivia
     public string question;
     public string[] choices;
     // The correct choice goes from 1 to length of choices.
-    // DO NOT PUT 0 AS A CORRECTCHOICE.
+    // DO NOT PUT 0 AS A CORRECT CHOICE.
     public int correctChoice;
 }

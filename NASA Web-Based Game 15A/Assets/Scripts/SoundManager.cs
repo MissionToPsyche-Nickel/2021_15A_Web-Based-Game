@@ -15,18 +15,16 @@ public class SoundManager : MonoBehaviour
     void Awake()
     {
         if (instance == null)
-        {
             instance = this;
-        }
         else
         {
             Destroy(gameObject);
             return;
-         }
+        }
          
-         DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);
         // gives each Sound item an AudioSource, audio file,
-        //  and volume silder from Sound class
+        //  and volume slider from Sound class
         foreach (Sound item in soundlist)
         {
             item.source = gameObject.AddComponent<AudioSource>();
@@ -41,9 +39,9 @@ public class SoundManager : MonoBehaviour
     public void PlaySound(string name)
     {
         Sound s = Array.Find(soundlist, sound => sound.clipName == name);
-        if(s == null)
+        if(ReferenceEquals(s, null))
         {
-          Debug.LogWarning(name + " does not exist");
+          //Debug.LogWarning(name + " does not exist");
           return;
         }
         s.source.Play();
@@ -54,9 +52,9 @@ public class SoundManager : MonoBehaviour
     public void StopSound(string name)
     {
         Sound s = Array.Find(soundlist, sound => sound.clipName == name);
-        if(s == null)
+        if(ReferenceEquals(s, null))
         {
-          Debug.LogWarning(name + " does not exist");
+          //Debug.LogWarning(name + " does not exist");
           return;
         }
         s.source.Stop();
