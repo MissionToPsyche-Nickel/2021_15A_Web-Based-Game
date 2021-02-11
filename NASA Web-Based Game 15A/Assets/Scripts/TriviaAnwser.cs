@@ -17,14 +17,15 @@ public class TriviaAnwser : MonoBehaviour
     {
         if (isCorrect)
         {
-            Debug.Log("Correct Anwser");
+            Debug.Log("Correct Answer");
 			SoundManager.instance.PlaySound("CorrectSound");
-            // Adds extra life to player if correct. Will probably switch this around
+            // Adds extra life to player if correct.
             GameObject.Find("Health").GetComponent<HealthUI>().health++;
-                
-        }else
+
+        }
+        else
         {
-            Debug.Log("Wrong Anwser");
+            Debug.Log("Wrong Answer");
             SoundManager.instance.PlaySound("IncorrectSound");	
         } 
         

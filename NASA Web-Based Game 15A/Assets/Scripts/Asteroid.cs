@@ -6,11 +6,18 @@ public class Asteroid : MonoBehaviour
 {
     public Animator animator;
     public bool collision = false;
+    float bottomY;
+    public float health = 1;
+
+    private void Start()
+    {
+        bottomY = GameObject.Find("GameController").GetComponent<GameStart>().lowerLeftXY.y;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.y < -6)
+        if (transform.position.y < bottomY)
         {
             Destroy(gameObject);
         }
@@ -29,7 +36,7 @@ public class Asteroid : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D objectCollider)
     {
-        if (objectCollider.CompareTag("Psyche"))
+        if (objectCollider.CompareTag("Psyche") && health == 1)
         {
             destroyAsteroid();
         }

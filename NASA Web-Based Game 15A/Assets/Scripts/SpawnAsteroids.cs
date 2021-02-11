@@ -20,6 +20,7 @@ public class SpawnAsteroids : MonoBehaviour
         if (Time.time - lastAsteroidTime > Random.Range(asteroidSpawnTimeMin, asteroidSpawnTimeMax))
         {
             lastAsteroidTime = Time.time;
+            // create instance and set position and velocity
             GameObject asteroid = Instantiate(asteroidPrefab);
             astSize = Random.Range(.01f, .05f);
             asteroid.transform.localScale = new Vector2(astSize, astSize);

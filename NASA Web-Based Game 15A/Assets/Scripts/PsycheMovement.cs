@@ -15,6 +15,8 @@ public class PsycheMovement : MonoBehaviour
     public float walkSpeed;
     public float runSpeed;
 
+    public float forceMultiplier = 1000;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -76,12 +78,13 @@ public class PsycheMovement : MonoBehaviour
     // is not needed
     void OnTriggerEnter2D(Collider2D enemyCollider)
     {
-	    if (enemyCollider.CompareTag("Asteroid"))
+	    if (enemyCollider.CompareTag("Asteroid") && enemyCollider.gameObject.GetComponent<Asteroid>().health == 1)
 	    {
+            // asteroid collision consumed
+            enemyCollider.gameObject.GetComponent<Asteroid>().health = 0;
 		    // Reduces player's life
         	GameObject.Find("Health").GetComponent<HealthUI>().health--;
 		    // Applies force to player
-		    float forceMultiplier = 1000;
 		    rb.AddForce(Vector3.down * forceMultiplier);
 	    }
     }

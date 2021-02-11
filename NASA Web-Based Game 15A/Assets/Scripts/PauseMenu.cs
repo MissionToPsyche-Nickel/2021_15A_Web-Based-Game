@@ -9,11 +9,11 @@ public class PauseMenu : MonoBehaviour
 	[SerializeField] private GameObject triviaPanel;
 
     void Start()
-    {
-	  
-      triviaPanel = GameObject.Find("Trivia Panel");
-	  pausePanel = GameObject.Find("Pause Panel");
-      pausePanel.SetActive(false);
+    {	  
+        triviaPanel = GameObject.Find("Trivia Panel");
+        pausePanel = GameObject.Find("Pause Panel");
+        pausePanel.SetActive(false);
+        inPauseMenu = false;
     }
     
     // Update is called once per frame

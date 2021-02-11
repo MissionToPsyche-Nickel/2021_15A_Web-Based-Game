@@ -610,6 +610,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 338120186}
   m_CullTransparentMesh: 0
+--- !u!1 &420549317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 420549318}
+  m_Layer: 0
+  m_Name: Spawn Location 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &420549318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420549317}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.56, y: 2.53, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1412648014}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &502920272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,6 +1062,83 @@ MonoBehaviour:
     - 2023
     - 2026
     correctChoice: 1
+  - question: How long is a day on Psyche?
+    choices:
+    - About 24 hours
+    - About 13 hours
+    - About 4 hours
+    - About 7 hours
+    correctChoice: 3
+  - question: Who is the Psyche asteroid named after?
+    choices:
+    - A psychic
+    - A  greek godess
+    - A scientist
+    - An astronaut
+    correctChoice: 2
+  - question: When was the Psyche asteroid discovered?
+    choices:
+    - April 20, 1942
+    - January 16, 2009
+    - March 7, 1958
+    - March 17, 1852
+    correctChoice: 4
+  - question: When will the spacecraft arrive on Psyche?
+    choices:
+    - Early 2026
+    - Late 2023
+    - Fall 2021
+    - Yesterday
+    correctChoice: 1
+  - question: Approximately what is the radius of Psyche?
+    choices:
+    - 68 miles
+    - 70 miles
+    - 225 miles
+    - 132 miles
+    correctChoice: 2
+  - question: How long would  it take for the Psyche asteroid to go around the sun?
+    choices:
+    - 6 months
+    - 2 years
+    - 5 years
+    - 14 years
+    correctChoice: 3
+  - question: What is the Psyche asteroid thought to be made of?
+    choices:
+    - Iron and water
+    - Rock and  metal
+    - Candy and butter
+    - Rock and ice
+    correctChoice: 2
+  - question: 'Who discovered the Psyche asteroid? '
+    choices:
+    - Galileo Galilei
+    - 'Henrietta Swann Leavitt '
+    - Annibale de Gasparis
+    - Paul Blart
+    correctChoice: 3
+  - question: Who is the Principal Investigator of the Psyche mission?
+    choices:
+    - Dr. Lindy Elkins-Tanton
+    - Dr. Cassie Bowman
+    - Neil Breen
+    - Dr.Mansour Javidan
+    correctChoice: 1
+  - question: How long will the spacecraft be mapping Psyche
+    choices:
+    - 12 moths
+    - 8 months
+    - 24 months
+    - 21 months
+    correctChoice: 3
+  - question: What makes the Psyche mission special?
+    choices:
+    - First mission to an asteroid
+    - First mission to a world of rock and ice
+    - First mission to build a colony
+    - Last mission to a planet
+    correctChoice: 2
   choiceButtons:
   - {fileID: 7786965}
   - {fileID: 1325752013}
@@ -1039,6 +1146,7 @@ MonoBehaviour:
   - {fileID: 1685704997}
   currentQuestion: 0
   questionText: {fileID: 806874224}
+  triviaPanel: {fileID: 0}
 --- !u!4 &767405885
 Transform:
   m_ObjectHideFlags: 0
@@ -1051,7 +1159,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &792729688
 GameObject:
@@ -1124,6 +1232,8 @@ MonoBehaviour:
   lowerRightXY: {x: 0, y: 0}
   gameOver: 0
   musicStopped: 0
+  pausePanel: {fileID: 1923502729}
+  triviaPanel: {fileID: 24171181}
 --- !u!1 &806874222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1257,6 +1367,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806874222}
   m_CullTransparentMesh: 0
+--- !u!1 &1204145691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1204145692}
+  m_Layer: 0
+  m_Name: Spawn Location 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1204145692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204145691}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.22, y: -1.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1412648014}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1221411145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,7 +2087,7 @@ MonoBehaviour:
   health: 3
   GameOverSoundplayed: 0
   gameOverText: {fileID: 1944997668}
---- !u!1 &1378171211
+--- !u!1 &1370472460
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1955,120 +2095,85 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1378171214}
-  - component: {fileID: 1378171213}
-  - component: {fileID: 1378171212}
-  - component: {fileID: 1378171215}
+  - component: {fileID: 1370472461}
   m_Layer: 0
-  m_Name: ' Power UP'
+  m_Name: Spawn Location 1
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &1378171212
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1378171211}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.56}
-    newSize: {x: 2.56, y: 2.56}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!212 &1378171213
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1378171211}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a569efd8af00c944cb69e38bbf75e084, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 2.56, y: 2.56}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1378171214
+--- !u!4 &1370472461
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1378171211}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.869, y: 1.959, z: 0}
-  m_LocalScale: {x: 0.6310924, y: 0.50066483, z: 1}
+  m_GameObject: {fileID: 1370472460}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.02, y: 0.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1412648014}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1378171215
+--- !u!1 &1412648013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1412648014}
+  - component: {fileID: 1412648015}
+  m_Layer: 0
+  m_Name: PowerUpManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1412648014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412648013}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1573457, y: -1.0121334, z: -0.83910763}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1370472461}
+  - {fileID: 420549318}
+  - {fileID: 1682835505}
+  - {fileID: 1204145692}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1412648015
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1378171211}
+  m_GameObject: {fileID: 1412648013}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 401e80b3a899ff845abf4191c02dd7e4, type: 3}
+  m_Script: {fileID: 11500000, guid: dea7adaa66d032d4ebc32c5770f81eb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question: {fileID: 24171181}
+  powerUpList:
+  - {fileID: 4486755842131123925, guid: 98a73182686ce1d4cae4f32c68c07add, type: 3}
+  spawnLocations:
+  - {fileID: 1370472461}
+  - {fileID: 420549318}
+  - {fileID: 1682835505}
+  - {fileID: 1204145692}
+  spawnTime: 2000
+  firstAppearance: 4
+  rateOfSpawn: 20
 --- !u!1 &1516345313
 GameObject:
   m_ObjectHideFlags: 0
@@ -2570,6 +2675,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1557688173}
   m_CullTransparentMesh: 0
+--- !u!1 &1682835504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1682835505}
+  m_Layer: 0
+  m_Name: Spawn Location 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1682835505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682835504}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.01, y: -2.36, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1412648014}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1685704997
 GameObject:
   m_ObjectHideFlags: 0
@@ -2769,6 +2904,11 @@ MonoBehaviour:
     volume: 0.51
     loop: 0
     source: {fileID: 0}
+  - clipName: PowerUp
+    clip: {fileID: 8300000, guid: 1468a68953ecddc4cbd8df18eaf3be3f, type: 3}
+    volume: 0.51
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &1702560725
 Transform:
   m_ObjectHideFlags: 0
@@ -2781,7 +2921,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1807955625
 GameObject:
@@ -3517,7 +3657,7 @@ PrefabInstance:
     - target: {fileID: 7874293577017955413, guid: bc2a6e8089a5149499723a94e69011bb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7874293577017955413, guid: bc2a6e8089a5149499723a94e69011bb,
         type: 3}
