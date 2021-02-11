@@ -12,6 +12,9 @@ public class SpawnAsteroids : MonoBehaviour
     private float astSize = 0; 
     //private float w = Screen.width;
     //private float h = Screen.height;
+
+    public float leftSide;
+    public float rightSide;
  
     // Update is called once per frame
     void Update()
@@ -24,7 +27,7 @@ public class SpawnAsteroids : MonoBehaviour
             GameObject asteroid = Instantiate(asteroidPrefab);
             astSize = Random.Range(.01f, .05f);
             asteroid.transform.localScale = new Vector2(astSize, astSize);
-            asteroid.transform.position = new Vector3(Random.Range(-10, 10), transform.position.y + 6, 0);
+            asteroid.transform.position = new Vector3(Random.Range(leftSide, rightSide), transform.position.y + 6, 0);
             
 
             /*GameObject asteroid = Instantiate(asteroidPrefab);

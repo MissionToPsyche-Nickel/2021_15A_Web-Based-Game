@@ -24,7 +24,7 @@ public class GameStart : MonoBehaviour
     void Start()
     {
         // does nothing
-        Screen.SetResolution(width, height, fullscreen);
+        // Screen.SetResolution(width, height, fullscreen);
         // play background music
         SoundManager.instance.PlaySound("Background");
 
@@ -32,11 +32,13 @@ public class GameStart : MonoBehaviour
         Vector3 upperLeftScreen = new Vector3(0, Screen.height, 0);
         //print("upperLeftScreen:" + upperLeftScreen);
         upperLeftXY = new Vector2(cam.ScreenToWorldPoint(upperLeftScreen).x, cam.ScreenToWorldPoint(upperLeftScreen).y);
+        GameObject.Find("GameController").GetComponent<SpawnAsteroids>().leftSide = upperLeftXY.x;
         //print("upperLeftXY:" + upperLeftXY);
 
         Vector3 upperRightScreen = new Vector3(Screen.width, Screen.height, 0);
         //print("upperRightScreen:" + upperRightScreen);
         upperRightXY = new Vector2(cam.ScreenToWorldPoint(upperRightScreen).x, cam.ScreenToWorldPoint(upperRightScreen).y);
+        GameObject.Find("GameController").GetComponent<SpawnAsteroids>().rightSide = upperRightXY.x;
         //print("upperRightXY:" + upperRightXY);
 
         Vector3 lowerLeftScreen = new Vector3(0, 0, 0);
