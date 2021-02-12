@@ -13,6 +13,7 @@ public class PowerUpManager : MonoBehaviour
     public float spawnTime = 2f;
     public float firstAppearance = 4f;
     public float rateOfSpawn = 20f;
+    public int range;
 
     void Start()
     {
@@ -22,7 +23,7 @@ public class PowerUpManager : MonoBehaviour
     
     void SpawnPowerUp()
     {
-        Instantiate(powerUpList[Random.Range(0, powerUpList.Length)],
+        Instantiate(powerUpList[Random.Range(0, powerUpList.Length)], 
             spawnLocations[Random.Range(0, spawnLocations.Length)]);
         SoundManager.instance.PlaySound("PowerUp");
     }
