@@ -991,7 +991,7 @@ MonoBehaviour:
   - question: Who is the Psyche asteroid named after?
     choices:
     - A psychic
-    - A  greek godess
+    - A  greek goddess
     - A scientist
     - An astronaut
     correctChoice: 2
@@ -1016,14 +1016,14 @@ MonoBehaviour:
     - 225 miles
     - 132 miles
     correctChoice: 2
-  - question: How long would  it take for the Psyche asteroid to go around the sun?
+  - question: How long would it take for the Psyche asteroid to go around the sun?
     choices:
-    - 6 months
-    - 2 years
-    - 5 years
-    - 14 years
+    - About 6 months
+    - About 2 years
+    - About 5 years
+    - About 14 years
     correctChoice: 3
-  - question: What is the Psyche asteroid thought to be made of?
+  - question: What materials are believed to make up a majority of Psyche?
     choices:
     - Iron and water
     - Rock and  metal
@@ -1033,7 +1033,7 @@ MonoBehaviour:
   - question: 'Who discovered the Psyche asteroid? '
     choices:
     - Galileo Galilei
-    - 'Henrietta Swann Leavitt '
+    - Henrietta Swan Leavitt
     - Annibale de Gasparis
     - Paul Blart
     correctChoice: 3
@@ -1042,21 +1042,21 @@ MonoBehaviour:
     - Dr. Lindy Elkins-Tanton
     - Dr. Cassie Bowman
     - Neil Breen
-    - Dr.Mansour Javidan
+    - Dr. Mansour Javidan
     correctChoice: 1
-  - question: How long will the spacecraft be mapping Psyche
+  - question: How long will the spacecraft be mapping Psyche?
     choices:
-    - 12 moths
+    - 12 months
     - 8 months
     - 24 months
     - 21 months
     correctChoice: 3
   - question: What makes the Psyche mission special?
     choices:
-    - First mission to an asteroid
-    - First mission to a world of rock and ice
-    - First mission to build a colony
-    - Last mission to a planet
+    - The first mission to an asteroid
+    - The first mission to a world of rock and metal
+    - The first mission to build a colony
+    - The last mission to a planet
     correctChoice: 2
   choiceButtons:
   - {fileID: 7786965}
