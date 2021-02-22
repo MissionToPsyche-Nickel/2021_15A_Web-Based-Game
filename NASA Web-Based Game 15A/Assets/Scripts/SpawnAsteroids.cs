@@ -28,7 +28,7 @@ public class SpawnAsteroids : MonoBehaviour
             astSize = Random.Range(.01f, .03f);
             asteroid.transform.localScale = new Vector2(astSize, astSize);
             asteroid.transform.position = new Vector3(Random.Range(leftSide, rightSide), transform.position.y + 6, 0);
-            asteroid.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(-4f, 4f), -1f, 0).normalized * Random.Range(.1f, 10f);
+            asteroid.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(-4f, 4f), Random.Range(-10f, -.3f), 0).normalized * Random.Range(.1f, 10f);
         }        
     }
 }
