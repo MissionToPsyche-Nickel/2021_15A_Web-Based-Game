@@ -1,0 +1,22 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SlowMovementPUp : MonoBehaviour
+{
+    private float lifespan = 12f;
+    void Start()
+    {
+        Destroy(gameObject, lifespan);
+    }
+    void OnTriggerEnter2D(Collider2D objectCollider)
+    {
+        if (objectCollider.CompareTag("Psyche"))
+        {
+            Destroy(gameObject);
+            // slows player down
+            GameObject.Find("Psyche").GetComponent<PsycheMovement>().movementPowerUP = 10;
+        }
+    }
+    
+}

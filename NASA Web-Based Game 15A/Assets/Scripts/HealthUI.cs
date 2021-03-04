@@ -25,7 +25,7 @@ public class HealthUI : MonoBehaviour
 
     public void gameOverScreen()
     {
-        if(health == 0)
+        if(health <= 0)
         {
             if (gameOverSoundplayed == false)
             {

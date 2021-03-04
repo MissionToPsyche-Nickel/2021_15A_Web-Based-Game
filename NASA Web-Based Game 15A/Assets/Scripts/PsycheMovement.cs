@@ -11,9 +11,14 @@ public class PsycheMovement : MonoBehaviour
     public Animator animator;
     
     //speeds for run/walk
+	
     public float moveSpeed;
+	public float defaultWalkSpeed = 10f;
+    public float defaultRunSpeed = 25f;
     public float walkSpeed;
     public float runSpeed;
+    public int movementPowerUP = 0;
+	private float movementPowerUpTimer = 0;
 
     public float forceMultiplier = 1000;
 
@@ -37,6 +42,26 @@ public class PsycheMovement : MonoBehaviour
 		} else {
        		moveSpeed = runSpeed;
 		}
+
+		//movementPowerUp
+		if(movementPowerUP > 0)
+		{
+			walkSpeed = defaultWalkSpeed * 0.1f;
+			runSpeed = defaultRunSpeed * 0.1f;
+		}
+		else
+		{
+			walkSpeed = defaultWalkSpeed;
+			runSpeed = defaultRunSpeed;
+		}
+
+		movementPowerUpTimer += Time.deltaTime;
+		if(movementPowerUpTimer >= 1)
+		{
+			movementPowerUP--;
+			movementPowerUpTimer = 0;
+		}
+		
        
 		//use mouse or key controls to move
 		if (Input.GetMouseButton(0))
