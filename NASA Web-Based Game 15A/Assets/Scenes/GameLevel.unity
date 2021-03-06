@@ -1147,6 +1147,7 @@ MonoBehaviour:
   lastAsteroidTime: -100
   leftSide: 0
   rightSide: 0
+  asteroids: []
 --- !u!4 &792729690
 Transform:
   m_ObjectHideFlags: 0
@@ -2211,6 +2212,7 @@ MonoBehaviour:
   powerUpList:
   - {fileID: 4486755842131123925, guid: 98a73182686ce1d4cae4f32c68c07add, type: 3}
   - {fileID: 9044758771989610669, guid: f8c47c10d30efc547a696c887da944e1, type: 3}
+  - {fileID: 23721393146019792, guid: 82a8e7e2b7eae2847ab2a0359f32337c, type: 3}
   spawnLocations:
   - {fileID: 1370472461}
   - {fileID: 420549318}

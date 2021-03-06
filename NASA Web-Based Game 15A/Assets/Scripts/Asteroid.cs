@@ -7,23 +7,27 @@ public class Asteroid : MonoBehaviour
     public Animator animator;
     public bool collision = false;
     float bottomY;
+    float leftX;
+    float rightX;
     public float health = 1;
 
     private void Start()
     {
         bottomY = GameObject.Find("GameController").GetComponent<GameStart>().lowerLeftXY.y;
+        leftX = GameObject.Find("GameController").GetComponent<GameStart>().lowerLeftXY.x;
+        rightX = GameObject.Find("GameController").GetComponent<GameStart>().lowerRightXY.x;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < bottomY)
+        if (transform.position.y < bottomY - 2 || transform.position.x < leftX - 2 || transform.position.x > rightX + 2)
         {
             Destroy(gameObject);
         }
     }
     
-    void destroyAsteroid()
+    public void destroyAsteroid()
     {
         // Plays sound upon collision
         SoundManager.instance.PlaySound("CollisionSound");
