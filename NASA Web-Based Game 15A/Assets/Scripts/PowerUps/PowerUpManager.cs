@@ -18,13 +18,13 @@ public class PowerUpManager : MonoBehaviour
     void Start()
     {
         // repeats function call every certain seconds after an initial certain seconds
-        InvokeRepeating("SpawnPowerUp",firstAppearance, rateOfSpawn);
+        InvokeRepeating(nameof(SpawnPowerUp),firstAppearance, rateOfSpawn);
     }
     
     void SpawnPowerUp()
     {
         Instantiate(powerUpList[Random.Range(0, powerUpList.Length)], 
-            spawnLocations[Random.Range(0, spawnLocations.Length)]);
+            spawnLocations[Random.Range(5, 5)]);
         SoundManager.instance.PlaySound("PowerUp");
     }
 }

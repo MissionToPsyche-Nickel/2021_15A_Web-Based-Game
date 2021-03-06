@@ -61,17 +61,8 @@ public class PsycheMovement : MonoBehaviour
 			movementPowerUP--;
 			movementPowerUpTimer = 0;
 		}
+		movement = new Vector2(horizontalPos,verticalPos) * moveSpeed;
 		
-       
-		//use mouse or key controls to move
-		if (Input.GetMouseButton(0))
-		{
-       		mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-       		direction = (mousePosition - transform.position).normalized;
-       		movement = new Vector2(direction.x, direction.y) * moveSpeed;
-		} else {
-       		movement = new Vector2(horizontalPos,verticalPos) * moveSpeed;
-		}
     }
     
     // FixedUpdate is called every physics detection step  
