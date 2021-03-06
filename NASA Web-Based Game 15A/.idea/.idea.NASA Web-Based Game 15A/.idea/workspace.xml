@@ -19,16 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="317d24a8-5b88-4907-b067-727a11698f8c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Asteroid/Asteroid Broken0.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/Asteroid/Asteroid Broken0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Asteroid/Asteroid Broken1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/Asteroid/Asteroid Broken1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Asteroid/Asteroid Broken2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Graphics/Asteroid/Asteroid Broken2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Asteroid/Asteroid Broken3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Graphics/Asteroid/Asteroid Broken3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PowerUpManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PowerUpManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/CorrectSound.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/CorrectSound.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/GameOverSound.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/GameOverSound.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sounds/IncorrectSound.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sounds/IncorrectSound.wav" afterDir="false" />
+    <list default="true" id="317d24a8-5b88-4907-b067-727a11698f8c" name="Default Changelist" comment="- Okay I might have messed up the repository,this should be the files not included in the last commit">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NASA Web-Based Game 15A/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NASA Web-Based Game 15A/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NASA Web-Based Game 15A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NASA Web-Based Game 15A/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PsycheMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PsycheMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +52,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Trivia.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriviaAnwser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PowerUpManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PsycheMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUpManager.cs" />
       </list>
     </option>
   </component>
@@ -109,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615001437200</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- Okay I might have messed up the repository,this should be the files not included in the last commit">
+      <created>1615002058155</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615002058155</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +140,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="- Added How to Play Section accessible through main menu&#10;- Removed mouse controls&#10;- Fixed Spawning location 6 so all locations appear on screen&#10;- Changed font to pop out&#10;I'm going to try to put a CRT filter over the game. I'm pushing in case I kill something." />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added How to Play Section accessible through main menu&#10;- Removed mouse controls&#10;- Fixed Spawning location 6 so all locations appear on screen&#10;- Changed font to pop out&#10;I'm going to try to put a CRT filter over the game. I'm pushing in case I kill something." />
+    <MESSAGE value="- Okay I might have messed up the repository,this should be the files not included in the last commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Okay I might have messed up the repository,this should be the files not included in the last commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="93" y="93" width="1350" height="648" key="VCS.FileHistoryDialog" timestamp="1613067266645">
