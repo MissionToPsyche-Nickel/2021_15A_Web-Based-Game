@@ -102,6 +102,14 @@
       <workItem from="1613059724835" duration="5759000" />
       <workItem from="1613094608239" duration="373000" />
     </task>
+    <task id="LOCAL-00001" summary="- Added How to Play Section accessible through main menu&#10;- Removed mouse controls&#10;- Fixed Spawning location 6 so all locations appear on screen&#10;- Changed font to pop out&#10;I'm going to try to put a CRT filter over the game. I'm pushing in case I kill something.">
+      <created>1615001437200</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615001437200</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +131,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="- Added How to Play Section accessible through main menu&#10;- Removed mouse controls&#10;- Fixed Spawning location 6 so all locations appear on screen&#10;- Changed font to pop out&#10;I'm going to try to put a CRT filter over the game. I'm pushing in case I kill something." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added How to Play Section accessible through main menu&#10;- Removed mouse controls&#10;- Fixed Spawning location 6 so all locations appear on screen&#10;- Changed font to pop out&#10;I'm going to try to put a CRT filter over the game. I'm pushing in case I kill something." />
   </component>
   <component name="WindowStateProjectService">
     <state x="93" y="93" width="1350" height="648" key="VCS.FileHistoryDialog" timestamp="1613067266645">
