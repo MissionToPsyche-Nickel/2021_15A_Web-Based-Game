@@ -1,0 +1,113 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class Scoreboard : MonoBehaviour
+{
+        public static Scoreboard instance;
+        public int maxScoreboardEntries = 5;
+        public Transform highscoresHolderTransform;
+        public GameObject scoreboardEntryObject;
+        public ScoreboardSaveData savedScores;
+
+        private void Start() 
+        {
+            if (instance == null)
+                instance = this;
+            else
+            {
+                Destroy(gameObject);
+                return;
+            }
+            
+            DontDestroyOnLoad(gameObject);
+            
+            savedScores = new ScoreboardSaveData();
+
+            for(int i = 0; i < 5; i++)
+            {
+                AddEntry(0);
+            }
+        }
+
+        private void Update() 
+        {
+            // disable if not in scoreboard scene
+            if(SceneManager.GetActiveScene().name == "Scoreboard")
+            {
+                this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            }
+            else
+            {
+                this.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+            }
+
+            // return to main menu
+            if (Input.GetKeyDown(KeyCode.M))
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
+        }
+
+        // add entry from int
+        public void AddEntry(int score)
+        {
+            ScoreboardEntryData entryData = new ScoreboardEntryData();
+            entryData.enrtyScore = score;
+            AddEntry(entryData);
+            Debug.Log("score: " + entryData.enrtyScore);
+            Debug.Log("score list pre added: " + savedScores.highscores);
+        }
+
+        // addd entry from entryDate object
+        public void AddEntry(ScoreboardEntryData scoreboardEntryData)
+        {
+            Debug.Log("To be added score: " + scoreboardEntryData.enrtyScore);
+            bool scoreAdded = false;
+            
+            for(int i = 0; i < savedScores.highscores.Count; i++)
+            {
+                if(scoreboardEntryData.enrtyScore > savedScores.highscores[i].enrtyScore)
+                {
+                    savedScores.highscores.Insert(i,scoreboardEntryData);
+                    scoreAdded = true;
+                    Debug.Log("Added score: " + scoreboardEntryData.enrtyScore);
+                    break;
+                }
+            }
+
+            if(!scoreAdded && savedScores.highscores.Count < maxScoreboardEntries)
+            {
+                savedScores.highscores.Add(scoreboardEntryData);
+                Debug.Log("Added score: " + scoreboardEntryData.enrtyScore);
+            }
+
+            if(savedScores.highscores.Count > maxScoreboardEntries)
+            {
+                savedScores.highscores.RemoveRange(
+                    maxScoreboardEntries,
+                    savedScores.highscores.Count - maxScoreboardEntries);                
+            }
+            Debug.Log("score list post added: " + savedScores.highscores);
+
+            UpdateUI(savedScores);
+
+        }
+
+        // update UI to reflect new scores
+        private void UpdateUI(ScoreboardSaveData savedScores)
+        {
+            foreach(Transform child in highscoresHolderTransform)
+            {
+                Destroy(child.gameObject);
+            }
+            foreach(ScoreboardEntryData highscore in savedScores.highscores)
+            {
+                Instantiate(scoreboardEntryObject,highscoresHolderTransform).
+                GetComponent<ScoreboardEntryUI>().Initialize(highscore);
+            }
+        }
+}
+
+

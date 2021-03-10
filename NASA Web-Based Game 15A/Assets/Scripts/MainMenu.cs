@@ -19,4 +19,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("HowToPlay");
     }
+
+    public void ScoreBoard()
+    {
+        SceneManager.LoadScene("Scoreboard");
+    }
 }

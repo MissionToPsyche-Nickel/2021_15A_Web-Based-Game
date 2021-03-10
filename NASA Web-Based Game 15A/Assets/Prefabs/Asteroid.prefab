@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8815343259648781955}
   - component: {fileID: 3747471020244151811}
   - component: {fileID: 2624585201762776085}
+  - component: {fileID: 4883019211328753843}
   m_Layer: 0
   m_Name: Asteroid
   m_TagString: Asteroid
@@ -128,7 +129,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217815422125994773}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -166,3 +167,75 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!60 &4883019211328753843
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217815422125994773}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 46.130093, y: 60.289997}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 16.382511, y: -16.2206}
+      - {x: 18.32545, y: -9.155366}
+      - {x: 19.326359, y: -7.182988}
+      - {x: 21.328175, y: -1.177539}
+      - {x: 22.329082, y: 2.8555322}
+      - {x: 22.329082, y: 7.8306346}
+      - {x: 22.270206, y: 7.889511}
+      - {x: 21.445929, y: 11.304375}
+      - {x: 19.67962, y: 12.246406}
+      - {x: 19.29692, y: 13.953837}
+      - {x: 17.324543, y: 13.89496}
+      - {x: 17.412859, y: 16.191162}
+      - {x: 14.351256, y: 18.310732}
+      - {x: 13.2914715, y: 18.899502}
+      - {x: 7.256584, y: 21.902225}
+      - {x: 3.2529516, y: 22.903133}
+      - {x: -0.45629635, y: 25.905859}
+      - {x: -7.698161, y: 25.905859}
+      - {x: -7.757038, y: 25.846981}
+      - {x: -9.699978, y: 24.90495}
+      - {x: -9.758855, y: 24.846073}
+      - {x: -11.701794, y: 23.904041}
+      - {x: -11.760671, y: 23.845165}
+      - {x: -14.792833, y: 21.872787}
+      - {x: -17.736681, y: 16.927124}
+      - {x: -19.826813, y: 12.864614}
+      - {x: -19.767937, y: 9.861889}
+      - {x: -19.709059, y: 9.803012}
+      - {x: -18.767029, y: 9.803012}
+      - {x: -18.767029, y: 3.8564403}
+      - {x: -18.70815, y: 3.7975633}
+      - {x: -18.767029, y: 1.8251854}
+      - {x: -19.767937, y: -2.1490088}
+      - {x: -21.769753, y: -6.0937643}
+      - {x: -21.769753, y: -19.13501}
+      - {x: -21.710875, y: -19.193886}
+      - {x: -20.768845, y: -22.137733}
+      - {x: -19.767937, y: -23.138641}
+      - {x: -19.85625, y: -23.491903}
+      - {x: -16.882965, y: -25.582035}
+      - {x: -13.70361, y: -26.200243}
+      - {x: -5.7257833, y: -28.202059}
+      - {x: 4.283298, y: -29.202967}
+      - {x: 10.259309, y: -29.202967}
+      - {x: 10.318186, y: -29.14409}
+      - {x: 13.2914715, y: -28.231497}
+      - {x: 15.381603, y: -26.288559}
