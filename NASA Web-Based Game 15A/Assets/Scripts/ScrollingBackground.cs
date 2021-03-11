@@ -13,7 +13,7 @@ public class ScrollingBackground : MonoBehaviour
     public string sortLayer = "Background";
     public int sortOrder = 0;
 
-    void Start()
+    private void Start()
     {
         quadRender.sortingLayerName = sortLayer;
         quadRender.sortingOrder = sortOrder;

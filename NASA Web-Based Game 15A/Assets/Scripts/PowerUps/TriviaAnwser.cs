@@ -11,9 +11,9 @@ using TMPro;
 public class TriviaAnwser : MonoBehaviour
 {
     public bool isCorrect = false;
-    GameObject correctChoice;
+    public GameObject correctChoice;
     
-    private void checkAnwser()
+    public void CheckAnwser()
     {
         if (isCorrect)
         {
@@ -31,15 +31,15 @@ public class TriviaAnwser : MonoBehaviour
         
         //gets the button that has the correct anwser and turns it green for
         // a second
-        correctChoice = GameObject.Find("TriviaManager").GetComponent<TriviaManager>().getCorrectChoice();
+        correctChoice = GameObject.Find("TriviaManager").GetComponent<TriviaManager>().GetCorrectChoice();
 		//correctChoice.GetComponent<Button>().interactable = false;
         correctChoice.GetComponent<Image>().color = Color.green;
         // Keeps the Question of screen for a second  and then resumes shoot em up
         //  portion.
-        StartCoroutine(exitTrivia()); 
+        StartCoroutine(ExitTrivia()); 
     }
 
-        private IEnumerator exitTrivia()
+        private IEnumerator ExitTrivia()
 	{
         yield return new WaitForSecondsRealtime(1);
         GameObject.Find("Trivia Panel").SetActive(false);

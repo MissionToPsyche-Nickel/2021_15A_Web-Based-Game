@@ -19,7 +19,7 @@ public class Asteroid : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (transform.position.y < bottomY - 2 || transform.position.x < leftX - 2 || transform.position.x > rightX + 2)
         {
@@ -27,7 +27,7 @@ public class Asteroid : MonoBehaviour
         }
     }
     
-    public void destroyAsteroid()
+    public void DestroyAsteroid()
     {
         // Plays sound upon collision
         SoundManager.instance.PlaySound("CollisionSound");
@@ -38,11 +38,11 @@ public class Asteroid : MonoBehaviour
 		collision = false;
     }
     
-    void OnTriggerEnter2D(Collider2D objectCollider)
+    private void OnTriggerEnter2D(Collider2D objectCollider)
     {
         if (objectCollider.CompareTag("Psyche") && health == 1)
         {
-            destroyAsteroid();
+            DestroyAsteroid();
         }
     }
 }

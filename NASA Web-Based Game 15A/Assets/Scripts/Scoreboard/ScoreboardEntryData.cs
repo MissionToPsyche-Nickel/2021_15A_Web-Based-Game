@@ -3,7 +3,7 @@
 
 public struct ScoreboardEntryData
 {
-    public int enrtyScore;
+    public int entryScore;
 }
 
 

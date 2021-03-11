@@ -50,8 +50,7 @@ public class GameStart : MonoBehaviour
         //print("lowerRightScreen:" + lowerRightScreen);
         lowerRightXY = new Vector2(cam.ScreenToWorldPoint(lowerRightScreen).x, cam.ScreenToWorldPoint(lowerRightScreen).y);
         //print("lowerRightXY:" + lowerRightXY);
-
-
+        
         gameOver = false;
         musicStopped = false;
         Time.timeScale = 1f;

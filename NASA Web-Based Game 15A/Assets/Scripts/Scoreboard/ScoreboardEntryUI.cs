@@ -9,7 +9,7 @@ public class ScoreboardEntryUI : MonoBehaviour
 
     public void Initialize(ScoreboardEntryData scoreboardEntryData)
     {
-        entryScoreText.text = scoreboardEntryData.enrtyScore.ToString();
+        entryScoreText.text = scoreboardEntryData.entryScore.ToString();
     }
 }
 

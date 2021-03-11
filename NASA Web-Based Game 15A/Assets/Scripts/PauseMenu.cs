@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    public bool inPauseMenu = false;
+    private bool inPauseMenu = false;
 	[SerializeField] private GameObject pausePanel;
 	[SerializeField] private GameObject triviaPanel;
+    public int health;
 
     void Start()
     {
@@ -21,7 +22,8 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            if (inPauseMenu == false)
+            health = GameObject.Find("Health").GetComponent<HealthUI>().health;
+            if (inPauseMenu == false && (health > 0))
                 PauseGame();
             else
                 ResumeGame();
@@ -51,6 +53,6 @@ public class PauseMenu : MonoBehaviour
         pausePanel.SetActive(false);
         inPauseMenu = false;
         GameObject.Find("Health").GetComponent<HealthUI>().health = 0;
-		GameObject.Find("Health").GetComponent<HealthUI>().gameOverScreen();
+		GameObject.Find("Health").GetComponent<HealthUI>().GameOverScreen();
     }
 }

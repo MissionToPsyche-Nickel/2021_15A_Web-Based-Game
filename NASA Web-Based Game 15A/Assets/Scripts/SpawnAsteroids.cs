@@ -6,8 +6,8 @@ public class SpawnAsteroids : MonoBehaviour
 {
 
     public GameObject asteroidPrefab;
-    private float asteroidSpawnTimeMin = 4f;
-    private float asteroidSpawnTimeMax = 8f;
+    private float asteroidSpawnTimeMin = 3f; // originally 4
+    private float asteroidSpawnTimeMax = 6f; // originally 8
     public float lastAsteroidTime = -100f;
     private float newTime = -100f;
     private float astSize = 0; 
@@ -29,7 +29,7 @@ public class SpawnAsteroids : MonoBehaviour
             lastAsteroidTime = Time.time;
             // create instance and set position and velocity
             GameObject asteroid = Instantiate(asteroidPrefab);
-            astSize = Random.Range(.01f, .03f);
+            astSize = Random.Range(.015f, .032f); // originally .01 to .03
             asteroid.transform.localScale = new Vector2(astSize, astSize);
             asteroid.transform.position = new Vector3(Random.Range(leftSide, rightSide), transform.position.y + 6, 0);
             asteroid.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(-4f, 4f), Random.Range(-10f, -.3f), 0).normalized * Random.Range(.1f, 10f);

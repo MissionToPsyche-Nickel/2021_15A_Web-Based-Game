@@ -13,17 +13,27 @@
           <e p="HealthUI.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
           <e p="PauseMenu.cs" t="Include" />
-          <e p="PowerUPManager.cs" t="Include" />
+          <e p="PowerUps" t="Include">
+            <e p="DestroyAsteroidsPUp.cs" t="Include" />
+            <e p="PowerUPManager.cs" t="Include" />
+            <e p="SlowMovementPUp.cs" t="Include" />
+            <e p="Trivia.cs" t="Include" />
+            <e p="TriviaAnwser.cs" t="Include" />
+            <e p="TriviaManager.cs" t="Include" />
+            <e p="TriviaPUp.cs" t="Include" />
+          </e>
           <e p="PsycheMovement.cs" t="Include" />
+          <e p="Scoreboard" t="Include">
+            <e p="Scoreboard.cs" t="Include" />
+            <e p="ScoreboardEntryData.cs" t="Include" />
+            <e p="ScoreboardEntryUI.cs" t="Include" />
+            <e p="ScoreboardSaveData.cs" t="Include" />
+          </e>
           <e p="ScoreUI.cs" t="Include" />
           <e p="ScrollingBackground.cs" t="Include" />
           <e p="Sound.cs" t="Include" />
           <e p="SoundManager.cs" t="Include" />
           <e p="SpawnAsteroids.cs" t="Include" />
-          <e p="Trivia.cs" t="Include" />
-          <e p="TriviaAnwser.cs" t="Include" />
-          <e p="TriviaManager.cs" t="Include" />
-          <e p="TriviaPUp.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">

@@ -12,9 +12,9 @@ public class PsycheMovement : MonoBehaviour
     
     //speeds for run/walk
 	
-    public float moveSpeed;
-	public float defaultWalkSpeed = 10f;
-    public float defaultRunSpeed = 25f;
+    private float moveSpeed;
+	private float defaultWalkSpeed = 10f;
+    private float defaultRunSpeed = 25f;
     public float walkSpeed;
     public float runSpeed;
     public int movementPowerUP = 0;
@@ -23,7 +23,7 @@ public class PsycheMovement : MonoBehaviour
     public float forceMultiplier = 1000;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
 		rb = this.GetComponent<Rigidbody2D>();
     }
@@ -31,7 +31,7 @@ public class PsycheMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-	    boundaryClamping();
+	    BoundaryClamping();
 	    float verticalPos = Input.GetAxis("Vertical");
 	    float horizontalPos = Input.GetAxis("Horizontal");
 	    
@@ -39,7 +39,9 @@ public class PsycheMovement : MonoBehaviour
 		if (Input.GetKey(KeyCode.LeftShift))
 		{
        		moveSpeed = walkSpeed;
-		} else {
+		} 
+		else 
+		{
        		moveSpeed = runSpeed;
 		}
 
@@ -62,19 +64,17 @@ public class PsycheMovement : MonoBehaviour
 			movementPowerUpTimer = 0;
 		}
 		
-       
-		//use mouse or key controls to move
 		movement = new Vector2(horizontalPos,verticalPos) * moveSpeed;
     }
     
     // FixedUpdate is called every physics detection step  
     void FixedUpdate()
     {
-		movePsyche(movement);
+		MovePsyche(movement);
     }
     
    // Constrains Psyche prefab to screen boundaries 
-    void boundaryClamping()
+    private void BoundaryClamping()
    {
 		// Clamps player object to size x by y screen
 		transform.position = new Vector3(Mathf.Clamp(transform.position.x, -7f, 7f),
@@ -83,7 +83,7 @@ public class PsycheMovement : MonoBehaviour
 
     // Type of movement Psyche will have
     // We can change this function if/when needed  
-    void movePsyche(Vector2 direction)
+    private void MovePsyche(Vector2 direction)
     {
         // sets parameters that determine animation to use
 		animator.SetFloat("verticalDistance", direction.y * Time.deltaTime);

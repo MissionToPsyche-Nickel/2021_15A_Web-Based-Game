@@ -8,11 +8,10 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager instance;
     //stores all the sound clips
-    //collisions, background music,powerup
     public Sound[] soundlist;
 
     // Awake is called before the game starts
-    void Awake()
+    private void Awake()
     {
         if (instance == null)
             instance = this;
@@ -54,8 +53,7 @@ public class SoundManager : MonoBehaviour
         Sound s = Array.Find(soundlist, sound => sound.clipName == name);
         if(ReferenceEquals(s, null))
         {
-          //Debug.LogWarning(name + " does not exist");
-          return;
+            return;
         }
         s.source.Stop();
      }

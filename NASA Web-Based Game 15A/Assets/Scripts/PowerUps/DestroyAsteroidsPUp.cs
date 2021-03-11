@@ -17,7 +17,7 @@ public class DestroyAsteroidsPUp : MonoBehaviour
             // destroy all asteroids
             foreach(GameObject asteroid in GameObject.FindGameObjectsWithTag("Asteroid"))
             {
-                asteroid.GetComponent<Asteroid>().destroyAsteroid();
+                asteroid.GetComponent<Asteroid>().DestroyAsteroid();
             }           
             Destroy(gameObject);
         }

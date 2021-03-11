@@ -5,11 +5,11 @@ using UnityEngine;
 public class SlowMovementPUp : MonoBehaviour
 {
     private float lifespan = 12f;
-    void Start()
+    private void Start()
     {
         Destroy(gameObject, lifespan);
     }
-    void OnTriggerEnter2D(Collider2D objectCollider)
+    private void OnTriggerEnter2D(Collider2D objectCollider)
     {
         if (objectCollider.CompareTag("Psyche"))
         {

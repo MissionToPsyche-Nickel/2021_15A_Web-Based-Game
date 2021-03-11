@@ -21,24 +21,24 @@ public class TriviaManager: MonoBehaviour
 	    triviaPanel.SetActive(false);
     }
 
-    public void activateTrivia()
+    public void ActivateTrivia()
     {
 	    triviaPanel.SetActive(true);
-	    getRandomQuestion();
+	    GetRandomQuestion();
     }
 
     // Gets random question from trivia bank
-    void getRandomQuestion()
+    private void GetRandomQuestion()
     {
         currentQuestion = Random.Range(0, triviaBank.Count);
         questionText.text = triviaBank[currentQuestion].question;
-        setChoices();
+        SetChoices();
     }
 
    	// adds anwsers to buttons based on question and picks correct anwser.
    	// Use the inspector to set up questions and correct anwsers in TriviaManager
    	// GameObject
-    void setChoices()
+    private void SetChoices()
     {
         for (int button = 0; button < choiceButtons.Length; button++)
         {
@@ -59,7 +59,7 @@ public class TriviaManager: MonoBehaviour
     }
 
     // Returns the button with the correct answer
-    public GameObject getCorrectChoice()
+    public GameObject GetCorrectChoice()
     {
 		GameObject choice = choiceButtons[0];
 
