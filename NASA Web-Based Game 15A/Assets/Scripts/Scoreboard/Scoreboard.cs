@@ -42,12 +42,6 @@ public class Scoreboard : MonoBehaviour
             {
                 this.gameObject.transform.GetChild(0).gameObject.SetActive(false);
             }
-
-            // return to main menu
-            if (Input.GetKeyDown(KeyCode.M))
-            {
-                SceneManager.LoadScene("MainMenu");
-            }
         }
 
         // add entry from int
@@ -63,7 +57,7 @@ public class Scoreboard : MonoBehaviour
         // addd entry from entryDate object
         public void AddEntry(ScoreboardEntryData scoreboardEntryData)
         {
-            Debug.Log("To be added score: " + scoreboardEntryData.entryScore);
+            //Debug.Log("To be added score: " + scoreboardEntryData.entryScore);
             bool scoreAdded = false;
             
             for(int i = 0; i < savedScores.highscores.Count; i++)
@@ -72,7 +66,7 @@ public class Scoreboard : MonoBehaviour
                 {
                     savedScores.highscores.Insert(i,scoreboardEntryData);
                     scoreAdded = true;
-                    Debug.Log("Added score: " + scoreboardEntryData.entryScore);
+                    //Debug.Log("Added score: " + scoreboardEntryData.entryScore);
                     break;
                 }
             }
@@ -80,7 +74,7 @@ public class Scoreboard : MonoBehaviour
             if(!scoreAdded && savedScores.highscores.Count < maxScoreboardEntries)
             {
                 savedScores.highscores.Add(scoreboardEntryData);
-                Debug.Log("Added score: " + scoreboardEntryData.entryScore);
+                //Debug.Log("Added score: " + scoreboardEntryData.entryScore);
             }
 
             if(savedScores.highscores.Count > maxScoreboardEntries)
@@ -89,7 +83,7 @@ public class Scoreboard : MonoBehaviour
                     maxScoreboardEntries,
                     savedScores.highscores.Count - maxScoreboardEntries);                
             }
-            Debug.Log("score list post added: " + savedScores.highscores);
+            //Debug.Log("score list post added: " + savedScores.highscores);
 
             UpdateUI(savedScores);
 

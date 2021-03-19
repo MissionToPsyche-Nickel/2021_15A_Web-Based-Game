@@ -21,7 +21,7 @@ public class GameStart : MonoBehaviour
     [SerializeField] private GameObject triviaPanel;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         // does nothing
         // Screen.SetResolution(width, height, fullscreen);
@@ -57,7 +57,7 @@ public class GameStart : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
        if(gameOver)
        {
@@ -66,8 +66,8 @@ public class GameStart : MonoBehaviour
                 SoundManager.instance.StopSound("Background");
                 musicStopped = true;
             }
+
             Time.timeScale = 0;
-            //GameObject.Find("Psyche").GetComponent<Renderer>().enabled = false;
        }
     }
 }

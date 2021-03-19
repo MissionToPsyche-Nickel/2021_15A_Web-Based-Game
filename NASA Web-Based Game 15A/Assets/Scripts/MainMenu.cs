@@ -24,4 +24,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Scoreboard");
     }
+    
+    public void Options()
+    {
+        SceneManager.LoadScene("Options");
+    }
 }

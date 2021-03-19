@@ -15,7 +15,7 @@ public class TriviaManager: MonoBehaviour
     public TextMeshProUGUI questionText;
     [SerializeField] private GameObject triviaPanel;
 
-    void Start()
+    private void Start()
     {
 	    triviaPanel = GameObject.Find("Trivia Panel");
 	    triviaPanel.SetActive(false);

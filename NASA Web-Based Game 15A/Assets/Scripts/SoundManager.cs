@@ -10,6 +10,19 @@ public class SoundManager : MonoBehaviour
     //stores all the sound clips
     public Sound[] soundlist;
 
+    private void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
+    private void Update()
+    {
+        /*foreach (Sound item in soundlist)
+        {
+            item.source.volume = item.volume;
+        }*/
+    }
+
     // Awake is called before the game starts
     private void Awake()
     {
@@ -32,7 +45,7 @@ public class SoundManager : MonoBehaviour
             item.source.loop = item.loop;
         }
     }
-    
+
     // Plays audio clip when called, used in other scripts when
     // clip is needed
     public void PlaySound(string name)

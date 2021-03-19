@@ -12,6 +12,7 @@
           <e p="GameStart.cs" t="Include" />
           <e p="HealthUI.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
+          <e p="OptionsMenu.cs" t="Include" />
           <e p="PauseMenu.cs" t="Include" />
           <e p="PowerUps" t="Include">
             <e p="DestroyAsteroidsPUp.cs" t="Include" />

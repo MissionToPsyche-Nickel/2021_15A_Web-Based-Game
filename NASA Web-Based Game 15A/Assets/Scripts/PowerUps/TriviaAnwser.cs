@@ -13,19 +13,17 @@ public class TriviaAnwser : MonoBehaviour
     public bool isCorrect = false;
     public GameObject correctChoice;
     
-    public void CheckAnwser()
+    public void CheckAnswer()
     {
         if (isCorrect)
         {
-            Debug.Log("Correct Answer");
-			SoundManager.instance.PlaySound("CorrectSound");
+            SoundManager.instance.PlaySound("CorrectSound");
             // Adds extra life to player if correct.
             GameObject.Find("Health").GetComponent<HealthUI>().health++;
 
         }
         else
         {
-            Debug.Log("Wrong Answer");
             SoundManager.instance.PlaySound("IncorrectSound");	
         } 
         
