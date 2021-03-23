@@ -11,6 +11,7 @@ public class SpawnAsteroids : MonoBehaviour
     public float lastAsteroidTime = -100f;
     private float newTime = -100f;
     private float astSize = 0; 
+    private float speedBoost = 0f;
     //private float w = Screen.width;
     //private float h = Screen.height;
     
@@ -32,7 +33,7 @@ public class SpawnAsteroids : MonoBehaviour
             astSize = Random.Range(.015f, .032f); // originally .01 to .03
             asteroid.transform.localScale = new Vector2(astSize, astSize);
             asteroid.transform.position = new Vector3(Random.Range(leftSide, rightSide), transform.position.y + 6, 0);
-            asteroid.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(-4f, 4f), Random.Range(-10f, -.3f), 0).normalized * Random.Range(.1f, 10f);
+            asteroid.GetComponent<Rigidbody2D>().velocity = new Vector3(Random.Range(-4f, 4f), Random.Range(-8f - speedBoost, -.3f), 0).normalized * Random.Range(.1f, 10f);
             asteroids.Add(asteroid);	
         }
 
@@ -41,10 +42,10 @@ public class SpawnAsteroids : MonoBehaviour
         if (Time.time - newTime > 1f)
         {
 	        newTime = Time.time;
-	        asteroidSpawnTimeMin = asteroidSpawnTimeMin - .05f;
-	        asteroidSpawnTimeMax = asteroidSpawnTimeMax - .05f; 
-	        print("min: " + asteroidSpawnTimeMin);
-	        print("max: " + asteroidSpawnTimeMax);
+	        asteroidSpawnTimeMin = asteroidSpawnTimeMin - .025f;
+	        asteroidSpawnTimeMax = asteroidSpawnTimeMax - .025f; 
+	        speedBoost = speedBoost - .05f;
+
 	        if (asteroidSpawnTimeMin < .3f)
 	        {
 	        	asteroidSpawnTimeMin = .3f;
@@ -53,6 +54,11 @@ public class SpawnAsteroids : MonoBehaviour
 	        if (asteroidSpawnTimeMax < 1f)
 	        {
 	        	asteroidSpawnTimeMax = 1f;
+	        }
+
+	        if (speedBoost < -4f)
+	        {
+	        	speedBoost = -4f;
 	        }
    		}
 
