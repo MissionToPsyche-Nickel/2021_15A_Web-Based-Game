@@ -307,9 +307,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Grab a Triva Power-UP for a 500 point boost to your score. Anwser a Psyche
+  m_text: 'Grab a Trivia Power-UP for a 500 point boost to your score. Answer a Psyche
     Trivia Question for a bonus. Take your time and search online for an extra life.
-    \n"
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: c4522106e5b63954cabe566701703558, type: 2}
@@ -516,8 +517,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Take a risk. Will you take the treacherous journey  for a chance to destroy
-    all the meteroids? Or will reach this random power-up only to be slowed down?
+  m_text: 'Take a risk. Will you take the treacherous journey for a chance to destroy
+    all the meteoroids? Or will reach this random power-up only to be slowed down?
 
 '
   m_isRightToLeft: 0
@@ -940,9 +941,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "help the our spacecraft dodge meteroids on its journey the Psyche asteroid.
-    Try to the get the highest score before the spacecraft reaches Psyche in 2024.
-    \n   - The Psyche Mission team   "
+  m_text: "Help our spacecraft dodge meteoroids on its journey to the Psyche asteroid.
+    Try to get the highest score before the spacecraft reaches Psyche in 2024. \n  
+    - The Psyche Mission team   "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: c4522106e5b63954cabe566701703558, type: 2}
@@ -1619,8 +1620,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use W,A,S,D to move and SHIFT to slow the spacecraft down in a pinch. Press
-    P to Pause/Unpause
+  m_text: Use W, A, S, D to move and SHIFT to slow the spacecraft down in a pinch.
+    Press P to Pause/Unpause
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: c4522106e5b63954cabe566701703558, type: 2}

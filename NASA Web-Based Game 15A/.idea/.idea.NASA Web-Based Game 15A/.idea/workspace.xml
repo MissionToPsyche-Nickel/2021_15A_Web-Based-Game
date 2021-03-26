@@ -19,21 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="317d24a8-5b88-4907-b067-727a11698f8c" name="Default Changelist" comment="Added New Graphics&#10;&#10;- Added new main menu graphics&#10;- Added Graphics to Stats page&#10;- Changed position of Spawn Location 6 to be in-screen&#10;- Formatted and changed modifiers on most .cs files">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NASA Web-Based Game 15A/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NASA Web-Based Game 15A/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NASA Web-Based Game 15A/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NASA Web-Based Game 15A/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NASA Web-Based Game 15A/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NASA Web-Based Game 15A/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameStart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameStart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PowerUps/TriviaAnwser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PowerUps/TriviaAnwser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PowerUps/TriviaManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PowerUps/TriviaManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scoreboard/Scoreboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scoreboard/Scoreboard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="317d24a8-5b88-4907-b067-727a11698f8c" name="Default Changelist" comment="Add Options Menu and Other Changes&#10;&#10;- Added Options Menu&#10;   -  Button action changes in HealthUI.cs&#10;   -  Moved SoundManager in MainMenu Scene &#10;-  Added Replay and Menu Buttons to Game Over Screen&#10;- Removed M key from loading menu" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,6 +113,7 @@
       <workItem from="1615500957532" duration="26000" />
       <workItem from="1616047448747" duration="4832000" />
       <workItem from="1616094937379" duration="10055000" />
+      <workItem from="1616118938612" duration="450000" />
     </task>
     <task id="LOCAL-00001" summary="- Added How to Play Section accessible through main menu&#10;- Removed mouse controls&#10;- Fixed Spawning location 6 so all locations appear on screen&#10;- Changed font to pop out&#10;I'm going to try to put a CRT filter over the game. I'm pushing in case I kill something.">
       <created>1615001437200</created>
@@ -149,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615500561095</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add Options Menu and Other Changes&#10;&#10;- Added Options Menu&#10;   -  Button action changes in HealthUI.cs&#10;   -  Moved SoundManager in MainMenu Scene &#10;-  Added Replay and Menu Buttons to Game Over Screen&#10;- Removed M key from loading menu">
+      <created>1616119186506</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616119186506</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +168,8 @@
     <MESSAGE value="- Added How to Play Section accessible through main menu&#10;- Removed mouse controls&#10;- Fixed Spawning location 6 so all locations appear on screen&#10;- Changed font to pop out&#10;I'm going to try to put a CRT filter over the game. I'm pushing in case I kill something." />
     <MESSAGE value="- Okay I might have messed up the repository,this should be the files not included in the last commit" />
     <MESSAGE value="Added New Graphics&#10;&#10;- Added new main menu graphics&#10;- Added Graphics to Stats page&#10;- Changed position of Spawn Location 6 to be in-screen&#10;- Formatted and changed modifiers on most .cs files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added New Graphics&#10;&#10;- Added new main menu graphics&#10;- Added Graphics to Stats page&#10;- Changed position of Spawn Location 6 to be in-screen&#10;- Formatted and changed modifiers on most .cs files" />
+    <MESSAGE value="Add Options Menu and Other Changes&#10;&#10;- Added Options Menu&#10;   -  Button action changes in HealthUI.cs&#10;   -  Moved SoundManager in MainMenu Scene &#10;-  Added Replay and Menu Buttons to Game Over Screen&#10;- Removed M key from loading menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Options Menu and Other Changes&#10;&#10;- Added Options Menu&#10;   -  Button action changes in HealthUI.cs&#10;   -  Moved SoundManager in MainMenu Scene &#10;-  Added Replay and Menu Buttons to Game Over Screen&#10;- Removed M key from loading menu" />
   </component>
   <component name="WindowStateProjectService">
     <state x="93" y="93" width="1350" height="648" key="VCS.FileHistoryDialog" timestamp="1613067266645">

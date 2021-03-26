@@ -1522,27 +1522,27 @@ MonoBehaviour:
     source: {fileID: 0}
   - clipName: CollisionSound
     clip: {fileID: 8300000, guid: c117f984007daaa45bcefe341654f560, type: 3}
-    volume: 0.5
+    volume: 1
     loop: 0
     source: {fileID: 0}
   - clipName: PowerUp
     clip: {fileID: 8300000, guid: 1468a68953ecddc4cbd8df18eaf3be3f, type: 3}
-    volume: 0.5
+    volume: 1
     loop: 0
     source: {fileID: 0}
   - clipName: CorrectSound
     clip: {fileID: 8300000, guid: 15ba4d402e8e2544e98fb513a36697dc, type: 3}
-    volume: 0.5
+    volume: 1
     loop: 0
     source: {fileID: 0}
   - clipName: IncorrectSound
     clip: {fileID: 8300000, guid: 69e0077becb82fb408d82a67ce729750, type: 3}
-    volume: 0.5
+    volume: 1
     loop: 0
     source: {fileID: 0}
   - clipName: GameOverSound
     clip: {fileID: 8300000, guid: 77f1ab753e3e6de4796cd806dab1a09e, type: 3}
-    volume: 0.5
+    volume: 1
     loop: 0
     source: {fileID: 0}
 --- !u!114 &1997428856
