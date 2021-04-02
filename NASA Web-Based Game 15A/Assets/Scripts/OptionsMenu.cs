@@ -25,7 +25,7 @@ public class OptionsMenu : MonoBehaviour
         {
             GameObject.Find("SoundManager").GetComponent<SoundManager>().soundlist[clip].source.volume = newVolume;
         }
-        GameObject.Find("SoundManager").GetComponent<SoundManager>().PlaySound("PowerUp");
+        //GameObject.Find("SoundManager").GetComponent<SoundManager>().PlaySound("PowerUp");
     }
     
     // Alters fullscreen
