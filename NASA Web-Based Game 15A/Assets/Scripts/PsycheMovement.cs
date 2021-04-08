@@ -13,14 +13,15 @@ public class PsycheMovement : MonoBehaviour
     //speeds for run/walk
 	
     private float moveSpeed;
-	private float defaultWalkSpeed = 10f;
-    private float defaultRunSpeed = 25f;
+	private float defaultWalkSpeed = 6f;
+    private float defaultRunSpeed = 15f;
     public float walkSpeed;
     public float runSpeed;
     public int movementPowerUP = 0;
 	private float movementPowerUpTimer = 0;
 
     public float forceMultiplier = 1000;
+	public Vector2 oldPosition = Vector2.zero;
 
     // Start is called before the first frame update
     private void Start()
@@ -31,18 +32,18 @@ public class PsycheMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-	    BoundaryClamping();
-	    float verticalPos = Input.GetAxis("Vertical");
-	    float horizontalPos = Input.GetAxis("Horizontal");
-	    
+		BoundaryClamping();
+		float verticalPos = Input.GetAxis("Vertical");
+		float horizontalPos = Input.GetAxis("Horizontal");
+		
 		//hold shift to walk
 		if (Input.GetKey(KeyCode.LeftShift))
 		{
-       		moveSpeed = walkSpeed;
+			moveSpeed = walkSpeed;
 		} 
 		else 
 		{
-       		moveSpeed = runSpeed;
+			moveSpeed = runSpeed;
 		}
 
 		//movementPowerUp
@@ -65,12 +66,24 @@ public class PsycheMovement : MonoBehaviour
 		}
 		
 		movement = new Vector2(horizontalPos,verticalPos) * moveSpeed;
+		oldPosition = transform.position;
+
+		Debug.Log("Movement: " + movement);
     }
     
     // FixedUpdate is called every physics detection step  
     void FixedUpdate()
     {
-		MovePsyche(movement);
+		if((Input.GetKey(KeyCode.W) ||
+			Input.GetKey(KeyCode.A) ||
+			Input.GetKey(KeyCode.S) ||
+			Input.GetKey(KeyCode.D) ||
+			Input.GetKey(KeyCode.UpArrow) ||
+			Input.GetKey(KeyCode.LeftArrow) ||
+			Input.GetKey(KeyCode.DownArrow) ||
+			Input.GetKey(KeyCode.RightArrow)
+			))
+			MovePsyche(movement);
     }
     
    // Constrains Psyche prefab to screen boundaries 
@@ -88,7 +101,9 @@ public class PsycheMovement : MonoBehaviour
         // sets parameters that determine animation to use
 		animator.SetFloat("verticalDistance", direction.y * Time.deltaTime);
 		animator.SetFloat("horizontalDistance", direction.x * Time.deltaTime);
-		rb.MovePosition((Vector2)transform.position + (direction * Time.deltaTime));
+		Vector2 position = (Vector2)transform.position + (direction * Time.deltaTime);
+		rb.MovePosition(position);
+		Debug.Log("Move towards:" + position);
     }
 
     // Applies pushback to player on collision, we can 

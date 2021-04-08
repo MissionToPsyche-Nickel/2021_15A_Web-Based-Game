@@ -43,5 +43,6 @@ public class TriviaAnwser : MonoBehaviour
         GameObject.Find("Trivia Panel").SetActive(false);
         Time.timeScale = 1f;
         correctChoice.GetComponent<Image>().color = Color.white;
+        GameObject.Find("Psyche").GetComponent<PsycheMovement>().movement = Vector2.zero;
 	}
 }
