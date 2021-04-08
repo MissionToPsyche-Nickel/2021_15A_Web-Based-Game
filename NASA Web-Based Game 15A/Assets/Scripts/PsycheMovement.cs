@@ -20,8 +20,13 @@ public class PsycheMovement : MonoBehaviour
     public int movementPowerUP = 0;
 	private float movementPowerUpTimer = 0;
 
-    public float forceMultiplier = 1000;
+    public float forceMultiplier = 1;
 	public Vector2 oldPosition = Vector2.zero;
+
+	public float topy;
+	public float bottomY;
+    public float leftX;
+    public float rightX;
 
     // Start is called before the first frame update
     private void Start()
@@ -84,14 +89,19 @@ public class PsycheMovement : MonoBehaviour
 			Input.GetKey(KeyCode.RightArrow)
 			))
 			MovePsyche(movement);
+		else
+		{
+			// rb.velocity = new Vector2(0,0);
+			// rb.angularVelocity = 0f;
+		}
     }
     
    // Constrains Psyche prefab to screen boundaries 
     private void BoundaryClamping()
    {
 		// Clamps player object to size x by y screen
-		transform.position = new Vector3(Mathf.Clamp(transform.position.x, -7f, 7f),
-		Mathf.Clamp(transform.position.y, -4.5f, 4.5f), transform.position.z);
+		transform.position = new Vector3(Mathf.Clamp(transform.position.x, leftX + 1.3f, rightX - 1.3f),
+		Mathf.Clamp(transform.position.y, bottomY + 0.5f, topy - 0.4f), transform.position.z);
    }
 
     // Type of movement Psyche will have
@@ -106,7 +116,7 @@ public class PsycheMovement : MonoBehaviour
 		}
 		Vector2 position = (Vector2)transform.position + (direction * Time.deltaTime);
 		rb.MovePosition(position);
-		//Debug.Log("Move towards:" + position);
+		Debug.Log("Move towards:" + position);
     }
 
     // Applies pushback to player on collision, we can 
@@ -121,7 +131,9 @@ public class PsycheMovement : MonoBehaviour
 		    // Reduces player's life
         	GameObject.Find("Health").GetComponent<HealthUI>().health--;
 		    // Applies force to player
-		    rb.AddForce(Vector3.down * forceMultiplier);
+		    // rb.AddForce(Vector3.down * forceMultiplier);
+			rb.MovePosition(rb.transform.position - new Vector3(0, 0.5f, 0));
+			Debug.Log("Hit by asteroid");
 	    }
     }
 }

@@ -127,6 +127,11 @@ MonoBehaviour:
   runSpeed: 25
   movementPowerUP: 0
   forceMultiplier: 1000
+  oldPosition: {x: 0, y: 0}
+  topy: 0
+  bottomY: 0
+  leftX: 0
+  rightX: 0
 --- !u!60 &703550147
 PolygonCollider2D:
   m_ObjectHideFlags: 0

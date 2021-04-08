@@ -50,6 +50,11 @@ public class GameStart : MonoBehaviour
         //print("lowerRightScreen:" + lowerRightScreen);
         lowerRightXY = new Vector2(cam.ScreenToWorldPoint(lowerRightScreen).x, cam.ScreenToWorldPoint(lowerRightScreen).y);
         //print("lowerRightXY:" + lowerRightXY);
+
+        GameObject.Find("Psyche").GetComponent<PsycheMovement>().topy = upperRightXY.y;
+        GameObject.Find("Psyche").GetComponent<PsycheMovement>().bottomY = lowerLeftXY.y;
+        GameObject.Find("Psyche").GetComponent<PsycheMovement>().leftX = lowerLeftXY.x;
+        GameObject.Find("Psyche").GetComponent<PsycheMovement>().rightX = lowerRightXY.x;
         
         gameOver = false;
         musicStopped = false;

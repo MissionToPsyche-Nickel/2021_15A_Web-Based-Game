@@ -16,6 +16,9 @@ public class Asteroid : MonoBehaviour
         bottomY = GameObject.Find("GameController").GetComponent<GameStart>().lowerLeftXY.y;
         leftX = GameObject.Find("GameController").GetComponent<GameStart>().lowerLeftXY.x;
         rightX = GameObject.Find("GameController").GetComponent<GameStart>().lowerRightXY.x;
+        Debug.Log("bottomY: " + bottomY);
+		Debug.Log("leftX: " + leftX);
+		Debug.Log("rightX: " + rightX);
     }
 
     // Update is called once per frame
