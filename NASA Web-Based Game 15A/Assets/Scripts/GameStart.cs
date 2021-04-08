@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GameStart : MonoBehaviour
 {
-    public int width = 1920;
-    public int height = 1080;
+    public int width = 1280;
+    public int height = 720;
     public bool fullscreen = false;
 
     public Camera cam;

@@ -37,37 +37,44 @@ public class SoundManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         // gives each Sound item an AudioSource, audio file,
         //  and volume slider from Sound class
-        foreach (Sound item in soundlist)
-        {
-            item.source = gameObject.AddComponent<AudioSource>();
-            item.source.clip = item.clip;
-            item.source.volume = item.volume;
-            item.source.loop = item.loop;
-        }
+        if(soundlist != null)
+            foreach (Sound item in soundlist)
+            {
+                item.source = gameObject.AddComponent<AudioSource>();
+                item.source.clip = item.clip;
+                item.source.volume = item.volume;
+                item.source.loop = item.loop;
+            }
     }
 
     // Plays audio clip when called, used in other scripts when
     // clip is needed
     public void PlaySound(string name)
     {
-        Sound s = Array.Find(soundlist, sound => sound.clipName == name);
-        if(ReferenceEquals(s, null))
+        if (soundlist != null)
         {
-          //Debug.LogWarning(name + " does not exist");
-          return;
+            Sound s = Array.Find(soundlist, sound => sound.clipName == name);
+            if (ReferenceEquals(s, null))
+            {
+                //Debug.LogWarning(name + " does not exist");
+                return;
+            }
+            s.source.Play();
         }
-        s.source.Play();
     }
 
     // Plays audio clip when called, used in other scripts when
     // clip is needed
     public void StopSound(string name)
     {
-        Sound s = Array.Find(soundlist, sound => sound.clipName == name);
-        if(ReferenceEquals(s, null))
+        if (soundlist != null)
         {
-            return;
+            Sound s = Array.Find(soundlist, sound => sound.clipName == name);
+            if (ReferenceEquals(s, null))
+            {
+                return;
+            }
+            s.source.Stop();
         }
-        s.source.Stop();
      }
 }

@@ -68,7 +68,7 @@ public class PsycheMovement : MonoBehaviour
 		movement = new Vector2(horizontalPos,verticalPos) * moveSpeed;
 		oldPosition = transform.position;
 
-		Debug.Log("Movement: " + movement);
+		//Debug.Log("Movement: " + movement);
     }
     
     // FixedUpdate is called every physics detection step  
@@ -96,14 +96,17 @@ public class PsycheMovement : MonoBehaviour
 
     // Type of movement Psyche will have
     // We can change this function if/when needed  
-    private void MovePsyche(Vector2 direction)
+    public void MovePsyche(Vector2 direction)
     {
-        // sets parameters that determine animation to use
-		animator.SetFloat("verticalDistance", direction.y * Time.deltaTime);
-		animator.SetFloat("horizontalDistance", direction.x * Time.deltaTime);
+		// sets parameters that determine animation to use
+		if (animator != null)
+		{
+			animator.SetFloat("verticalDistance", direction.y * Time.deltaTime);
+			animator.SetFloat("horizontalDistance", direction.x * Time.deltaTime);
+		}
 		Vector2 position = (Vector2)transform.position + (direction * Time.deltaTime);
 		rb.MovePosition(position);
-		Debug.Log("Move towards:" + position);
+		//Debug.Log("Move towards:" + position);
     }
 
     // Applies pushback to player on collision, we can 

@@ -15,12 +15,17 @@ namespace Tests
             var gameObject = new GameObject();
             var sceneLoader = gameObject.AddComponent<MainMenu>();
 
+            var soundMangerObject = new GameObject();
+            var soundManager = soundMangerObject.AddComponent<SoundManager>();
+            soundManager.soundlist = null;
+
             sceneLoader.PlayGame();
 
             yield return new WaitForSeconds(1);
 
             Assert.AreEqual(SceneManager.GetActiveScene().name, "GameLevel");
         }
+
         [UnityTest]
         public IEnumerator ScoreboardScene()
         {
@@ -39,6 +44,10 @@ namespace Tests
         {
             var gameObject = new GameObject();
             var sceneLoader = gameObject.AddComponent<MainMenu>();
+
+            var soundMangerObject = new GameObject("SoundManager");
+            var soundManager = soundMangerObject.AddComponent<SoundManager>();
+            soundManager.soundlist = null;
 
             sceneLoader.Options();
 

@@ -8,7 +8,8 @@ public class OptionsMenu : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        soundListSize = GameObject.Find("SoundManager").GetComponent<SoundManager>().soundlist.Length;
+        if(GameObject.Find("SoundManager").GetComponent<SoundManager>().soundlist != null)
+            soundListSize = GameObject.Find("SoundManager").GetComponent<SoundManager>().soundlist.Length;
     }
 
     // Used to change volume of in-game background music
