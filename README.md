@@ -27,26 +27,29 @@ Things used in this project:
 
 Go to the Installs tab on the left side of the Unity Hub and select.
 
-![image info](master/pictures/InstallsTab.png)
+![InstallsTab](https://user-images.githubusercontent.com/71917988/114223189-5cd0eb00-9924-11eb-9f1b-3c7a18881097.PNG)
+
 
 ## Step 2:
 
 Click the three dots on your Unity Install.
 Scroll down and check the WebGL module and add it.
 
-![image info](master/pictures/AddWebGLModule.png)
+![AddWebGLModule](https://user-images.githubusercontent.com/71917988/114223214-64908f80-9924-11eb-82e8-f9c21c02d3cc.PNG)
+
 
 ## Step 3:
 
 When you launch Unity go to the File tab on the top left and select "Build Settings".
 
-![image info](master/pictures/fileBuild.png)
+![FileBuild](https://user-images.githubusercontent.com/71917988/114223233-69edda00-9924-11eb-8af4-4c2a3514c6af.PNG)
+
 
 ## Step 4:
 
 Select WebGL, click build, and select folder to build in.
 
-![image info](master/pictures/buildWebGL.png)
+![BuildWebGL](https://user-images.githubusercontent.com/71917988/114223281-77a35f80-9924-11eb-8396-7ff5d4949026.PNG)
 
 
 # Game Info
