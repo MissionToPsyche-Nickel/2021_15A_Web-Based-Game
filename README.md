@@ -54,3 +54,15 @@ Select WebGL, click build, and select folder to build in.
 
 # Game Info
 
+## Main Menu
+
+![MainMenu](https://user-images.githubusercontent.com/71917988/114223921-424b4180-9925-11eb-8007-afb0f438707c.PNG)
+
+From the Main Menu you can choose to play the game, check your high scores, change your audio settings, or learn about the game.
+
+
+## Game Scene
+
+![PlayScene](https://user-images.githubusercontent.com/71917988/114223947-4aa37c80-9925-11eb-86c9-40726e936351.PNG)
+
+
