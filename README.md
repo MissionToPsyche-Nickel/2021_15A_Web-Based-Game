@@ -22,7 +22,7 @@ Things used in this project:
 - Microsoft Visual Studio
 
 # How to Build?
-
+(A built WebGL version is also included in the WebGL Build folder unless there are specific changes needed to the build settings.)
 ## Step 1:
 
 Go to the Installs tab on the left side of the Unity Hub and select.
