@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+// This script keeps track of the player score
 
 public class ScoreUI : MonoBehaviour
 {

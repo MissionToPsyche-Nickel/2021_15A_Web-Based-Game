@@ -7,13 +7,25 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="Asteroid.cs" t="Include" />
-          <e p="DestroyObject.cs" t="Include" />
-          <e p="GameStart.cs" t="Include" />
-          <e p="HealthUI.cs" t="Include" />
-          <e p="MainMenu.cs" t="Include" />
-          <e p="OptionsMenu.cs" t="Include" />
-          <e p="PauseMenu.cs" t="Include" />
+          <e p="Game Level" t="Include">
+            <e p="Asteroid" t="Include">
+              <e p="Asteroid.cs" t="Include" />
+              <e p="DestroyObject.cs" t="Include" />
+              <e p="SpawnAsteroids.cs" t="Include" />
+            </e>
+            <e p="GameStart.cs" t="Include" />
+            <e p="PsycheMovement.cs" t="Include" />
+            <e p="ScrollingBackground.cs" t="Include" />
+          </e>
+          <e p="Health+Score" t="Include">
+            <e p="HealthUI.cs" t="Include" />
+            <e p="ScoreUI.cs" t="Include" />
+          </e>
+          <e p="Menus" t="Include">
+            <e p="MainMenu.cs" t="Include" />
+            <e p="OptionsMenu.cs" t="Include" />
+            <e p="PauseMenu.cs" t="Include" />
+          </e>
           <e p="PowerUps" t="Include">
             <e p="DestroyAsteroidsPUp.cs" t="Include" />
             <e p="PowerUPManager.cs" t="Include" />
@@ -23,18 +35,28 @@
             <e p="TriviaManager.cs" t="Include" />
             <e p="TriviaPUp.cs" t="Include" />
           </e>
-          <e p="PsycheMovement.cs" t="Include" />
           <e p="Scoreboard" t="Include">
             <e p="Scoreboard.cs" t="Include" />
             <e p="ScoreboardEntryData.cs" t="Include" />
             <e p="ScoreboardEntryUI.cs" t="Include" />
             <e p="ScoreboardSaveData.cs" t="Include" />
           </e>
-          <e p="ScoreUI.cs" t="Include" />
-          <e p="ScrollingBackground.cs" t="Include" />
-          <e p="Sound.cs" t="Include" />
-          <e p="SoundManager.cs" t="Include" />
-          <e p="SpawnAsteroids.cs" t="Include" />
+          <e p="Scripts.asmdef" t="Include" />
+          <e p="Sound" t="Include">
+            <e p="Sound.cs" t="Include" />
+            <e p="SoundManager.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Tests" t="Include">
+          <e p="EditMode" t="Include">
+            <e p="EditMode.asmdef" t="Include" />
+            <e p="EditModeTests.cs" t="Include" />
+          </e>
+          <e p="PlayMode" t="Include">
+            <e p="GameSceneTests.cs" t="Include" />
+            <e p="PlayMode.asmdef" t="Include" />
+            <e p="SceneTest.cs" t="Include" />
+          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
@@ -111,9 +133,12 @@
           </e>
         </e>
       </e>
+      <e p="EditMode.csproj" t="IncludeRecursive" />
       <e p="NASA Web-Based Game 15A.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
+      <e p="PlayMode.csproj" t="IncludeRecursive" />
+      <e p="Scripts.csproj" t="IncludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
   </component>

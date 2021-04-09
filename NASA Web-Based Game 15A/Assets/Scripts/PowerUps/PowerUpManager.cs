@@ -23,10 +23,10 @@ public class PowerUpManager : MonoBehaviour
     
     private void SpawnPowerUp()
     {
-        // Power-Up 0 : Trivia 50% chance
+        // Power-Up 0 : Trivia 60% chance
         // Get the power-up for 500 point score increase,
         // Answer the question right for an extra life
-        // Power-Up 1 and 2 : Random 25% chance each
+        // Power-Up 1 and 2 : Random 20% chance each
         // 1 : Slowdown, slows down player for a number of seconds
         // 2: Destroy Meteoroids, destroy all obstacles on screen
         

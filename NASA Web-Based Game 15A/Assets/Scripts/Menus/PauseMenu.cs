@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// This script dictates pausing and options in the pause menu
 
 public class PauseMenu : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class PauseMenu : MonoBehaviour
 	[SerializeField] private GameObject triviaPanel;
     public int health;
 
-    void Start()
+    private void Start()
     {
         triviaPanel = GameObject.Find("Trivia Panel");
         pausePanel = GameObject.Find("Pause Panel");
@@ -18,7 +19,7 @@ public class PauseMenu : MonoBehaviour
     }
     
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
@@ -30,6 +31,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    // Resumes game after paused
     public void ResumeGame()
     {
 		//triviaPanel = GameObject.Find("Trivia Panel");
@@ -41,6 +43,7 @@ public class PauseMenu : MonoBehaviour
         inPauseMenu = false;
     }
 
+    // Pauses game
     private void PauseGame()
     {
         pausePanel.SetActive(true);
@@ -48,6 +51,7 @@ public class PauseMenu : MonoBehaviour
 		Time.timeScale = 0f;
     }
     
+    // causes game over
     public void ExitGame()
     {
         pausePanel.SetActive(false);

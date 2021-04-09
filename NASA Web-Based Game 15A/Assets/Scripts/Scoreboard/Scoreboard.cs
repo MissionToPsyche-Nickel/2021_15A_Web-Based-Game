@@ -22,7 +22,6 @@ public class Scoreboard : MonoBehaviour
             }
             
             DontDestroyOnLoad(gameObject);
-            
             savedScores = new ScoreboardSaveData();
 
             for(int i = 0; i < 5; i++)
@@ -50,14 +49,11 @@ public class Scoreboard : MonoBehaviour
             ScoreboardEntryData entryData = new ScoreboardEntryData();
             entryData.entryScore = score;
             AddEntry(entryData);
-            //Debug.Log("score: " + entryData.enrtyScore);
-            //Debug.Log("score list pre added: " + savedScores.highscores);
         }
 
-        // addd entry from entryDate object
-        public void AddEntry(ScoreboardEntryData scoreboardEntryData)
+        // add entry from entryDate object
+        private void AddEntry(ScoreboardEntryData scoreboardEntryData)
         {
-            //Debug.Log("To be added score: " + scoreboardEntryData.entryScore);
             bool scoreAdded = false;
             
             for(int i = 0; i < savedScores.highscores.Count; i++)
@@ -66,7 +62,6 @@ public class Scoreboard : MonoBehaviour
                 {
                     savedScores.highscores.Insert(i,scoreboardEntryData);
                     scoreAdded = true;
-                    //Debug.Log("Added score: " + scoreboardEntryData.entryScore);
                     break;
                 }
             }
@@ -74,7 +69,6 @@ public class Scoreboard : MonoBehaviour
             if(!scoreAdded && savedScores.highscores.Count < maxScoreboardEntries)
             {
                 savedScores.highscores.Add(scoreboardEntryData);
-                //Debug.Log("Added score: " + scoreboardEntryData.entryScore);
             }
 
             if(savedScores.highscores.Count > maxScoreboardEntries)
@@ -83,8 +77,6 @@ public class Scoreboard : MonoBehaviour
                     maxScoreboardEntries,
                     savedScores.highscores.Count - maxScoreboardEntries);                
             }
-            //Debug.Log("score list post added: " + savedScores.highscores);
-
             UpdateUI(savedScores);
 
         }

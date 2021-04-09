@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// This script controls movement of the Psyche spacecraft
 
 public class PsycheMovement : MonoBehaviour
 {
@@ -35,13 +36,13 @@ public class PsycheMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
 		BoundaryClamping();
 		float verticalPos = Input.GetAxis("Vertical");
 		float horizontalPos = Input.GetAxis("Horizontal");
 		
-		//hold shift to walk
+		// hold shift to walk
 		if (Input.GetKey(KeyCode.LeftShift))
 		{
 			moveSpeed = walkSpeed;
@@ -51,7 +52,7 @@ public class PsycheMovement : MonoBehaviour
 			moveSpeed = runSpeed;
 		}
 
-		//movementPowerUp
+		// movementPowerUp
 		if(movementPowerUP > 0)
 		{
 			walkSpeed = defaultWalkSpeed * 0.1f;
@@ -72,12 +73,10 @@ public class PsycheMovement : MonoBehaviour
 		
 		movement = new Vector2(horizontalPos,verticalPos) * moveSpeed;
 		oldPosition = transform.position;
-
-		//Debug.Log("Movement: " + movement);
     }
     
     // FixedUpdate is called every physics detection step  
-    void FixedUpdate()
+    private void FixedUpdate()
     {
 		if((Input.GetKey(KeyCode.W) ||
 			Input.GetKey(KeyCode.A) ||
@@ -89,23 +88,17 @@ public class PsycheMovement : MonoBehaviour
 			Input.GetKey(KeyCode.RightArrow)
 			))
 			MovePsyche(movement);
-		else
-		{
-			// rb.velocity = new Vector2(0,0);
-			// rb.angularVelocity = 0f;
-		}
     }
     
    // Constrains Psyche prefab to screen boundaries 
-    private void BoundaryClamping()
+   private void BoundaryClamping()
    {
 		// Clamps player object to size x by y screen
 		transform.position = new Vector3(Mathf.Clamp(transform.position.x, leftX + 1.3f, rightX - 1.3f),
 		Mathf.Clamp(transform.position.y, bottomY + 0.5f, topy - 0.4f), transform.position.z);
    }
 
-    // Type of movement Psyche will have
-    // We can change this function if/when needed  
+    // Type of movement Psyche spacecraft will have
     public void MovePsyche(Vector2 direction)
     {
 		// sets parameters that determine animation to use
@@ -116,23 +109,21 @@ public class PsycheMovement : MonoBehaviour
 		}
 		Vector2 position = (Vector2)transform.position + (direction * Time.deltaTime);
 		rb.MovePosition(position);
-		Debug.Log("Move towards:" + position);
     }
 
     // Applies pushback to player on collision, we can 
     // get rid of the entire function if the pushback 
     // is not needed
-    void OnTriggerEnter2D(Collider2D enemyCollider)
+    // && enemyCollider.gameObject.GetComponent<Asteroid>().health == 1
+    private void OnTriggerEnter2D(Collider2D enemyCollider)
     {
-	    if (enemyCollider.CompareTag("Asteroid") && enemyCollider.gameObject.GetComponent<Asteroid>().health == 1)
+	    if (enemyCollider.CompareTag("Asteroid"))
 	    {
             // asteroid collision consumed
             enemyCollider.gameObject.GetComponent<Asteroid>().health = 0;
 		    // Reduces player's life
         	GameObject.Find("Health").GetComponent<HealthUI>().health--;
-		    // Applies force to player
-		    // rb.AddForce(Vector3.down * forceMultiplier);
-			rb.MovePosition(rb.transform.position - new Vector3(0, 0.5f, 0));
+            rb.MovePosition(rb.transform.position - new Vector3(0, 0.5f, 0));
 			Debug.Log("Hit by asteroid");
 	    }
     }

@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-// This script  handles the trivia power-up itself. Specfically , it handles
+// This script  handles the trivia power-up itself. Specifically , it handles
 // its destruction and interaction with psyche
+
 public class TriviaPUp : MonoBehaviour
 {
     private float lifespan = 12f;

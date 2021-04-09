@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+// This script handles all changes made in the options menu
 
 public class OptionsMenu : MonoBehaviour
 {
     private int soundListSize = 0;
     public Slider bgSlider;
     public Slider seSlider;
+    
     // Start is called before the first frame update
     private void Start()
     {
@@ -27,11 +29,10 @@ public class OptionsMenu : MonoBehaviour
     // Used to change volume of sound effects
     public void AdjustEffectVolume(float newVolume)
     {
-        for(var clip = 1; clip < soundListSize; clip++)
+        for (var clip = 1; clip < soundListSize; clip++)
         {
             GameObject.Find("SoundManager").GetComponent<SoundManager>().soundlist[clip].source.volume = newVolume;
         }
-        //GameObject.Find("SoundManager").GetComponent<SoundManager>().PlaySound("PowerUp");
     }
     
     // Alters fullscreen

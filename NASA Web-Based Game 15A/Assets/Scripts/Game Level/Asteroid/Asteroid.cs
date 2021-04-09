@@ -16,9 +16,6 @@ public class Asteroid : MonoBehaviour
         bottomY = GameObject.Find("GameController").GetComponent<GameStart>().lowerLeftXY.y;
         leftX = GameObject.Find("GameController").GetComponent<GameStart>().lowerLeftXY.x;
         rightX = GameObject.Find("GameController").GetComponent<GameStart>().lowerRightXY.x;
-        Debug.Log("bottomY: " + bottomY);
-		Debug.Log("leftX: " + leftX);
-		Debug.Log("rightX: " + rightX);
     }
 
     // Update is called once per frame
@@ -30,6 +27,8 @@ public class Asteroid : MonoBehaviour
         }
     }
     
+    // plays sound and sets asteroid animation 
+    // variable
     public void DestroyAsteroid()
     {
         // Plays sound upon collision
@@ -41,6 +40,7 @@ public class Asteroid : MonoBehaviour
 		collision = false;
     }
     
+    // destroys asteroid on collision
     private void OnTriggerEnter2D(Collider2D objectCollider)
     {
         if (objectCollider.CompareTag("Psyche") && health == 1)

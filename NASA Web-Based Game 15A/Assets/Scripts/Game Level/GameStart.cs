@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// This script sets up window coordinates and sets up game over variables
+// and background music for game level scene
 
 public class GameStart : MonoBehaviour
 {
@@ -23,33 +25,27 @@ public class GameStart : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        // does nothing
-        // Screen.SetResolution(width, height, fullscreen);
         // play background music
         SoundManager.instance.PlaySound("Background");
 
         // find the game coordinates from screen size
+        // upper left
         Vector3 upperLeftScreen = new Vector3(0, Screen.height, 0);
-        //print("upperLeftScreen:" + upperLeftScreen);
         upperLeftXY = new Vector2(cam.ScreenToWorldPoint(upperLeftScreen).x, cam.ScreenToWorldPoint(upperLeftScreen).y);
         GameObject.Find("GameController").GetComponent<SpawnAsteroids>().leftSide = upperLeftXY.x;
-        //print("upperLeftXY:" + upperLeftXY);
-
+        
+        // upper right
         Vector3 upperRightScreen = new Vector3(Screen.width, Screen.height, 0);
-        //print("upperRightScreen:" + upperRightScreen);
         upperRightXY = new Vector2(cam.ScreenToWorldPoint(upperRightScreen).x, cam.ScreenToWorldPoint(upperRightScreen).y);
         GameObject.Find("GameController").GetComponent<SpawnAsteroids>().rightSide = upperRightXY.x;
-        //print("upperRightXY:" + upperRightXY);
 
+        // lower left
         Vector3 lowerLeftScreen = new Vector3(0, 0, 0);
-        //print("lowerLeftScreen:" + lowerLeftScreen);
         lowerLeftXY = new Vector2(cam.ScreenToWorldPoint(lowerLeftScreen).x, cam.ScreenToWorldPoint(lowerLeftScreen).y);
-        //print("lowerLeftXY:" + lowerLeftXY);
 
+        // lower right
         Vector3 lowerRightScreen = new Vector3(Screen.width, 0, 0);
-        //print("lowerRightScreen:" + lowerRightScreen);
         lowerRightXY = new Vector2(cam.ScreenToWorldPoint(lowerRightScreen).x, cam.ScreenToWorldPoint(lowerRightScreen).y);
-        //print("lowerRightXY:" + lowerRightXY);
 
         GameObject.Find("Psyche").GetComponent<PsycheMovement>().topy = upperRightXY.y;
         GameObject.Find("Psyche").GetComponent<PsycheMovement>().bottomY = lowerLeftXY.y;
@@ -71,7 +67,6 @@ public class GameStart : MonoBehaviour
                 SoundManager.instance.StopSound("Background");
                 musicStopped = true;
             }
-
             Time.timeScale = 0;
        }
     }

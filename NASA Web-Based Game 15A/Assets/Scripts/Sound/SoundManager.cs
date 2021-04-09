@@ -1,9 +1,8 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.Audio;
+// This script manages all the audio clips
 
-// I used the Manager from this video https://www.youtube.com/watch?v=6OT43pvUyfY.
-// Please change it around if anyone has a better way to manage it
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager instance;
@@ -14,15 +13,7 @@ public class SoundManager : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
     }
-
-    private void Update()
-    {
-        /*foreach (Sound item in soundlist)
-        {
-            item.source.volume = item.volume;
-        }*/
-    }
-
+    
     // Awake is called before the game starts
     private void Awake()
     {
@@ -76,5 +67,5 @@ public class SoundManager : MonoBehaviour
             }
             s.source.Stop();
         }
-     }
+    }
 }

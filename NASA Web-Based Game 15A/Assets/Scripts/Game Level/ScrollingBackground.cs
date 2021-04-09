@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.UIElements;
+// This script translates the 3D background for a scrolling effect
 
 
 public class ScrollingBackground : MonoBehaviour
@@ -15,6 +16,7 @@ public class ScrollingBackground : MonoBehaviour
 
     private void Start()
     {
+        // places the background at the very bottom of the order
         quadRender.sortingLayerName = sortLayer;
         quadRender.sortingOrder = sortOrder;
     }

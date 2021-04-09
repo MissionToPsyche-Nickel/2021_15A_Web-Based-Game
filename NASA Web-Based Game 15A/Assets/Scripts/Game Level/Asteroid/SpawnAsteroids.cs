@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// This script handles asteroid spawning
 
 public class SpawnAsteroids : MonoBehaviour
 {

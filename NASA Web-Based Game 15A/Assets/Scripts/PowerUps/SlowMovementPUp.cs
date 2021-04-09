@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+// This script slows down Psyche spacecraft when random power-up is triggered 
 
 public class SlowMovementPUp : MonoBehaviour
 {
