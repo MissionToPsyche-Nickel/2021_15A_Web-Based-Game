@@ -1084,7 +1084,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Help our spacecraft dodge meteoroids on its journey to the Psyche asteroid.
-    Try to get the highest score before the spacecraft reaches Psyche in 2024. \n  
+    Try to get the highest score before the spacecraft reaches Psyche in 2029. \n  
     - The Psyche Mission team   "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
