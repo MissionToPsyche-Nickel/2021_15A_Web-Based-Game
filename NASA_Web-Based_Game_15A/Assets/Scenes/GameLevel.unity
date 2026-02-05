@@ -1411,7 +1411,7 @@ MonoBehaviour:
     - 2025
     - 2023
     - 2026
-    correctChoice: 1
+    correctChoice: 3
   - question: How long is a day on Psyche?
     choices:
     - About 24 hours
@@ -1435,11 +1435,11 @@ MonoBehaviour:
     correctChoice: 4
   - question: When will the spacecraft arrive on Psyche?
     choices:
-    - Early 2026
-    - Late 2023
-    - Fall 2021
+    - Early 2028
+    - Late 2029
+    - Fall 2027
     - Yesterday
-    correctChoice: 1
+    correctChoice: 2
   - question: Approximately what is the radius of Psyche?
     choices:
     - 68 miles
